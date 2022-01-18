@@ -67,9 +67,9 @@ module.exports = {
         type: 'asset/source',
         use: [
           {
-            loader: 'pug-html-loader',
+            loader: '@webdiscus/pug-loader',
             options: {
-              pretty: true
+              method: 'html'
             }
           }
         ]
@@ -102,10 +102,13 @@ module.exports = {
       },
 
       {
-        test: /\.(png|svg|jpg|jpeg|gif|ico")$/i,
+        test: /\.(png|svg|jpg|jpeg|jfif|gif|mov|mp4|ico|webmanifest|xml)$/i,
         type: 'asset/resource',
         generator: {
-          filename: './images/[name][ext]'
+          filename: (name) => {
+            const path = name.filename.split('/').slice(1, -1).join('/')
+            return `${path}/[name][ext]`
+          }
         }
       }
     ]

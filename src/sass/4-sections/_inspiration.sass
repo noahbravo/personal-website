@@ -1,0 +1,79 @@
+@use "../0-config/helpers" as h
+
+.inspiration
+  height: h.rem(708px)
+  margin: h.$main-padding 0
+
+  &__inner
+    position: relative
+    width: 100%
+    height: 100%
+    z-index: 10
+
+  &__row
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    position: absolute
+
+
+  &__heading
+    font-family: h.$secondary-font
+    font-weight: normal
+    font-size: h.rem(38px)
+    transform: translateY(h.rem(286px))
+    user-select: none
+
+    +h.for-size(tablet-portrait-up)
+      font-size: h.rem(68px)
+
+  &__album
+    width: h.rem(150px)
+    height: h.rem(150px)
+    position: absolute
+
+    +h.for-size(tablet-portrait-up)
+      width: h.rem(200px)
+      height: h.rem(200px)
+
+    +h.for-size(laptop-up)
+      width: h.rem(250px)
+      height: h.rem(250px)
+
+    &__list
+      display: flex
+      position: relative
+
+    &__overlay
+      position: absolute
+      background: linear-gradient(180deg,transparent,rgba(0,0,0,.8953956583))
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 33%
+
+    &__artist
+      display: flex
+      align-items: center
+      padding: h.rem(0 16px 16px)
+      position: absolute
+      bottom: 0
+      left: 0
+
+      &--img
+        width: h.rem(30px)
+        height: h.rem(30px)
+        border-radius: 50%
+        margin-right: h.rem(4px)
+
+      &--text
+        font-size: h.$helper-text
+        line-height: 1.2
+
+.compatibility-mode
+  .inspiration
+    &__heading
+      font-family: h.$primary-font
+      text-transform: uppercase
+

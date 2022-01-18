@@ -1,0 +1,39 @@
+@use "../0-config/helpers" as h
+
+//	Typography
+strong
+  font-weight: normal
+
+// Links
+a
+  color: h.$white
+  text-decoration: none
+
+// images
+img, picture, video, canvas, svg
+  display: block
+  max-width: 100%
+
+// scrollbar
+::-webkit-scrollbar
+  display:none
+  width: 0
+  background: transparent
+
+// Basic Styles
+html
+  box-sizing: border-box
+
+*,
+*:before,
+*:after
+  box-sizing: inherit
+
+body
+  font-size: 16px
+  font-family: h.$primary-font
+  color: h.$white
+  background-color: h.$black
+  line-height: 1.5
+  -webkit-font-smoothing: antialiased
+  overflow-x: hidden

@@ -1,0 +1,112 @@
+@use "../0-config/helpers" as h
+
+.contact
+  padding-bottom: h.rem(40px)
+
+  +h.for-size(laptop-up)
+    padding-bottom: h.$main-padding
+
+  &__wrap
+    max-height: h.rem(708px)
+
+  &__row
+    display: grid
+    grid-template-columns: repeat(12,minmax(0,1fr))
+
+  &__heading
+    font-family: h.$secondary-font
+    font-weight: normal
+    margin: 0
+
+    &--h2
+      grid-column: span 12/span 12
+
+      +h.for-size(laptop-up)
+        grid-column-start: 3
+
+    &--h3
+      grid-column: span 3/span 3
+
+      +h.for-size(phone-only)
+        grid-column: span 4/span 4
+
+      +h.for-size(laptop-up)
+        grid-column: span 2/span 2
+        grid-column-start: 3
+
+  &__details
+    line-height: 1
+    font-size: h.rem(42px)
+    letter-spacing: h.rem(1px)
+    position: relative
+
+    +h.for-size(tablet-portrait-up)
+      font-size: h.rem(80px)
+
+    &__wrapper
+      grid-column: span 12/span 12
+      margin: h.rem(20px 0 40px)
+
+      +h.for-size(laptop-up)
+        grid-column: span 7/span 7
+        grid-column-start: 3
+        margin: h.rem(20px 0 60px)
+
+    &__inner
+      position: absolute
+      top: h.rem(-5px)
+      left: 0
+
+    &--website
+      .contact__details__inner
+        width: h.rem(628px)
+        height: h.rem(106px)
+        top: h.rem(76px)
+        transform: translateX(-2.5%)
+
+    &--hey
+      .contact__details__inner
+        width: h.rem(244px)
+        height: h.rem(108px)
+        transform: translateX(-6%)
+
+  &__img
+    display: none
+    width: h.rem(120px)
+    transform: translateY(-80px)
+
+    +h.for-size(laptop-up)
+      display: flex
+
+  &__social
+    grid-column-start: 9
+    display: flex
+    flex-direction: column
+    text-transform: uppercase
+    font-size: h.$header-4
+    list-style: none
+    padding: 0
+    margin: 0
+
+    +h.for-size(tablet-portrait-up)
+      grid-column-start: unset
+
+    &__item
+
+      &__link
+        position: relative
+
+        &--inner
+          width: h.rem(90px)
+          transform: translateX(-11%) translateY(50%)
+
+        &.hover--02
+          .contact__social__item__link
+            &--inner
+              width: h.rem(110px)
+              transform: translateX(-8%) translateY(50%)
+
+        &:hover, &.active
+          .contact__social__item__link--hover
+            width: 100%
+

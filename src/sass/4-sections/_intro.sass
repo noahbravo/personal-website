@@ -1,0 +1,144 @@
+@use "../0-config/helpers" as h
+
+.intro
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  &__main
+    display: grid
+    align-items: center
+    grid-template-columns: repeat(12,minmax(0,1fr))
+    height: 100%
+    max-height: h.rem(500px)
+    padding-top: h.rem(20px)
+
+    &__heading
+      grid-column: span 10/span 10
+      grid-column-start: 2
+      font-weight: normal
+      font-family: h.$secondary-font
+      font-size: h.rem(78px)
+      font-weight: normal
+      height: h.rem(425px)
+      max-width: h.rem(425px)
+      padding: h.rem(50px 0 0)
+      margin: 0
+
+
+      +h.for-size(phone-only)
+        font-size: h.rem(64px)
+
+      +h.for-size(tablet-portrait-up)
+        grid-column-start: 3
+        padding: 0
+        font-size: h.rem(96px)
+
+      +h.for-size(laptop-up)
+        grid-column: span 6/span 6
+        grid-column-start: 3
+        font-size: h.rem(96px)
+
+      +h.for-size(desktop-up)
+
+    &__cta
+      display: flex
+      justify-content: center
+      align-items: center
+      width: h.rem(100px)
+      height: h.rem(100px)
+      position: fixed
+      right: h.rem(20px)
+      bottom: h.rem(32px)
+      z-index: 40
+
+      +h.for-size(tablet-portrait-up)
+        bottom: h.rem(40px)
+
+      +h.for-size(laptop-up)
+        grid-column-start: 11
+        align-self: flex-start
+        width: h.rem(120px)
+        height: h.rem(120px)
+        position: relative
+
+      +h.for-size(desktop-up)
+        transform: translateY(h.rem(-20px))
+
+      &:hover
+        .intro__main__cta__inner
+          transform: scale(1.2)
+
+      &__inner
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: h.$white
+        border-radius: 50%
+        transform: scale(1)
+        transition: transform 1.2s cubic-bezier(.16,1,.3,1)
+
+      &__text
+        position: absolute
+        top: h.rem(30px)
+        font-family: h.$secondary-font
+        color: h.$primary-turquoise
+        line-height: 1.7
+        transform: rotate(10deg)
+
+        +h.for-size(laptop-up)
+          top: h.rem(42px)
+
+        +h.for-size(big-desktop-up)
+          top: 50%
+          left: 50%
+          transform: rotate(10deg) translate(-55%, -40%)
+
+  &__scroll-down
+    width: 100%
+    position: absolute
+    bottom: 0
+    padding-bottom: h.$main-padding
+
+    &__container
+      height: h.rem(1px)
+
+    &__link
+      display: flex
+      width: h.rem(40px)
+
+      +h.for-size(laptop-up)
+        transform: translateY(h.rem(-50px))
+
+    &__img
+      position: relative
+      width: 100%
+      animation: MoveUpDown 1.1s linear
+      -webkit-animation: MoveUpDown 1.1s linear infinite
+
+
+.compatibility-mode
+  .intro
+    &__main
+      &__heading
+        overflow: hidden
+        text-indent: 101%
+        white-space: nowrap
+        max-width: h.rem(425px)
+        background:
+          image: url(../images/heading.svg)
+          repeat: no-repeat
+          position: center
+          size: contain
+        height: h.rem(425px)
+        font-family: h.$primary-font
+
+      &__cta
+        &__text
+          font-family: h.$primary-font
+          font-weight: bold
+          text-transform: uppercase
+          font-size: h.$header-5
+          line-height: 1.2
+

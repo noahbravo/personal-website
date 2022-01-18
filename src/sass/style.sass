@@ -1,16 +1,23 @@
-@import '~sass-rem'
-
 // TOOLS
-@import '0-tools/fonts'
+@forward '1-tools/fonts'
+@forward '1-tools/animations'
+@forward '1-tools/utilities'
 
 // BASE
-@import '1-base/vars'
-@import '1-base/base'
+@forward '2-base/base'
 
 // MODULES
+@forward '3-modules/preloader'
+@forward '3-modules/header'
+@forward '3-modules/nav'
+@forward '3-modules/footer'
 
 // SECTIONS
-@import '3-sections/terminal'
+@forward '4-sections/intro'
+@forward '4-sections/about'
+@forward '4-sections/stack'
+@forward '4-sections/inspiration'
+@forward '4-sections/contact'
 
 // LAYOUTS
-@import '4-layouts/main'
+@forward '5-layouts/main'

@@ -1,0 +1,61 @@
+@use "../0-config/helpers" as h
+
+.stack
+  padding: h.rem(0 0 h.$main-padding)
+
+  +h.for-size(laptop-up)
+    padding: h.$main-padding 0
+
+  &__wrap
+
+    +h.for-size(desktop-up)
+      max-height: h.rem(708px)
+
+  &__row
+    display: grid
+    grid-template-columns: repeat(12,minmax(0,1fr))
+
+  &__heading
+    grid-column: span 12/span 12
+    font-family: h.$secondary-font
+    font-weight: normal
+
+    +h.for-size(laptop-up)
+      grid-column: span 2/span 2
+      grid-column-start: 3
+
+  &__text
+    grid-column: span 12/span 12
+    line-height: 1.7
+    font-family: h.$secondary-font
+    font-size: h.$header-2
+    letter-spacing: h.rem(1px)
+    margin: h.rem(20px 0 0)
+
+    +h.for-size(tablet-landscape-up)
+      font-size: h.rem(36px)
+
+    +h.for-size(laptop-up)
+      grid-column: span 7/span 7
+      grid-column-start: 3
+      font-size: h.rem(37px)
+
+    +h.for-size(desktop-up)
+      font-size: h.rem(42px)
+
+  &__img
+    display: none
+    align-self: flex-end
+    transform: translateY(80px)
+
+    +h.for-size(laptop-up)
+      display: flex
+
+.compatibility-mode
+  .stack
+    &__heading, &__text
+      font-family: h.$primary-font
+      text-transform: uppercase
+
+    &__text
+      line-height: 1.4

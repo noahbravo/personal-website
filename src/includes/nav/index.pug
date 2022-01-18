@@ -1,0 +1,53 @@
+.mobile-menu
+  .mobile-menu__content
+    .wrap
+      img(src="./images/logo.svg" alt="Elena Bravo site's logo").header__logo.mobile-menu__header
+    nav.mobile-menu__nav
+      ul.mobile-menu__nav__item-list
+        li.mobile-menu__nav__item
+          a(href="#about").mobile-menu__nav__item__link About
+        li.mobile-menu__nav__item
+          a(href="#stack").mobile-menu__nav__item__link Stack
+        li.mobile-menu__nav__item
+          a(href="#inspiration").mobile-menu__nav__item__link Inspiration
+        li.mobile-menu__nav__item
+          a(href="#contact").mobile-menu__nav__item__link Contact
+    .wrap
+      .mobile-menu__social
+        ul.mobile-menu__social__item-list
+          li.mobile-menu__social__item
+            a(href="https://github.com/elenabravo", target="_blank", rel="noopener") Github
+          li.mobile-menu__social__item
+            a(href="https://www.linkedin.com/in/elena-bravo/", target="_blank" rel="noopener") LinkedIn
+          li.mobile-menu__social__item
+            a(href="https://spoti.fi/34t4OZJ", target="_blank", rel="noopener") Spotify
+
+  .mobile-menu__button
+    .mobile-menu__button--icon
+    .mobile-menu__button--label Menu
+nav.menu
+  ul.menu__item-list.wrap
+    li.menu__item
+      a(href="#about").menu__item__link.link
+        span.menu__item__link--inner.link--inner
+          span.link--hover
+            img.menu__item__link--hover(src="./images/hover-line-md.svg")
+        .menu__item__link__label About
+    li.menu__item
+      a(href="#stack").menu__item__link.link.hover--02
+        span.menu__item__link--inner.link--inner
+          span.link--hover
+            img(src="./images/hover-line-md.svg")
+        .menu__item__link__label Stack
+    li.menu__item
+      a(href="#inspiration").menu__item__link.link.hover--03
+        span.menu__item__link--inner.link--inner
+          span.link--hover
+            img(src="./images/hover-line-lg.svg")
+        .menu__item__link__label Inspiration
+    li.menu__item
+      a(href="#contact").menu__item__link.link.hover--04
+        span.menu__item__link--inner.link--inner
+          span.link--hover
+            img(src="./images/hover-line-lg.svg")
+        .menu__item__link__label Contact

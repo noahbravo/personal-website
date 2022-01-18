@@ -3,10 +3,21 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title
-    meta(name='description', content='')
+    title Elena Bravo - Front-end Developer
+    meta(name='description', content="Hi, I'm Elena Bravo, a multidisciplinary front-end developer and web designer based in Madrid, Spain")
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-  body
+    link(rel='apple-touch-icon' sizes='180x180' href='./favicon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='./favicon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png')
+    link(rel='manifest' href='./favicon/site.webmanifest')
+    link(rel='mask-icon' href='./favicon/safari-pinned-tab.svg' color='#0098a8')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap' rel='stylesheet')
+    meta(name='msapplication-TileColor' content='#ffffff')
+    meta(name='theme-color' content='#0098a8')
+
+  body.is-loading
     //if lte IE 9
       p.browserupgrade
         | You are using an
@@ -15,5 +26,16 @@ html.no-js(lang='en')
         a(href='https://browsehappy.com/') upgrade your browser
         |  to improve your experience and security.
 
-    section.terminal__wrapper
-      include ../includes/terminal.pug
+    .page--wrap
+      include ../includes/preloader/index.pug
+      include ../includes/header/index.pug
+      include ../includes/nav/index.pug
+
+      main.main
+        .main--wrap
+          include ../includes/sections/intro.pug
+          include ../includes/sections/about.pug
+          include ../includes/sections/stack.pug
+          include ../includes/sections/inspiration.pug
+          include ../includes/sections/contact.pug
+          include ../includes/footer/index.pug

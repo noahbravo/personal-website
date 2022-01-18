@@ -1,0 +1,23 @@
+@use "../0-config/helpers" as h
+
+.header
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 20
+  width: 100%
+  padding: h.rem(40px 0)
+
+  +h.for-size(tablet-portrait-up)
+    padding: h.rem(40px 0 0)
+
+  +h.for-size(laptop-up)
+    position: fixed
+    padding-top: h.$main-padding
+
+  &__logo
+    width: h.rem(120px)
+
+    +h.for-size(tablet-portrait-up)
+      width: h.rem(150px)
+

@@ -28,9 +28,9 @@ const isLoadingClassName = 'is-loading'
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
     animatePreloader()
-    body.classList.remove(isLoadingClassName)
 
     setTimeout(() => {
+      body.classList.remove(isLoadingClassName)
       animateBgColorOnScroll()
       scrollTriggerAnimations()
       ghostAnimation()

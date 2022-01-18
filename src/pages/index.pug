@@ -17,6 +17,14 @@ html.no-js(lang='en')
     meta(name='msapplication-TileColor' content='#ffffff')
     meta(name='theme-color' content='#0098a8')
 
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-140490331-1')
+    script.
+      window.dataLayer = window.dataLayer || []
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js', new Date())
+      gtag('config', 'UA-140490331-1')
+
   body.is-loading
     //if lte IE 9
       p.browserupgrade

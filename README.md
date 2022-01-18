@@ -15,7 +15,7 @@ It includes the following features:
 
 ### Server
 
-- [Spotify web api node](https://github.com/thelinmichael/spotify-web-api-node) was use to used to generate tracks and artists data which is requiered for the the inspiration section.
+- [Spotify web api node](https://github.com/thelinmichael/spotify-web-api-node) was used to generate tracks and artists data which is requiered for the the inspiration section.
 - In order to create these files a [Spotify authentication token](https://developer.spotify.com/documentation/general/guides/authorization/) must be provided.
 - Run `npm run set:data` to start the server and generate the data or `npm run set:data:watch` to do it in watch mode.
 

@@ -19,9 +19,12 @@
     align-items: center
 
   &__img
-    width: h.rem(150px)
+    width: h.rem(100px)
     fill: h.$white
     animation: Rotate 1.5s infinite
+
+    +h.for-size(laptop-up)
+      width: h.rem(120px)
 
   &__text
     display: flex

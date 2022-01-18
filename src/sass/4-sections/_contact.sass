@@ -1,9 +1,11 @@
 @use "../0-config/helpers" as h
 
 .contact
+  padding-top: h.rem(26px)
   padding-bottom: h.rem(40px)
 
   +h.for-size(laptop-up)
+    padding-top: 0
     padding-bottom: h.$main-padding
 
   &__wrap

@@ -46,7 +46,8 @@ export const createImageInteraction = (cardOptions) => {
 
     // hide the loading wrapper
     setTimeout(() => {
-      document.querySelector('.loading').classList.add('hide')
+      const loading = document.querySelector('.loading')
+      if (loading) loading.classList.add('hide')
     }, 2000)
 
     // let the gsap animation begin

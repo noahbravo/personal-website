@@ -1,4 +1,4 @@
-export const onDocumentReady = (callback) => {
+export function onDocumentReady(callback) {
   // in case the document is already rendered
   if (document.readyState !== 'loading') callback()
   // modern browsers
@@ -77,7 +77,7 @@ export function SmoothScroll(target, speed, smooth) {
   })()
 }
 
-export const isInViewport = (element) => {
+export function isInViewport(element) {
   let top = element.offsetTop
   let left = element.offsetLeft
   const width = element.offsetWidth
@@ -95,4 +95,15 @@ export const isInViewport = (element) => {
     top + height > window.pageYOffset &&
     left + width > window.pageXOffset
   )
+}
+
+export function smoothAnchorScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      })
+    })
+  })
 }

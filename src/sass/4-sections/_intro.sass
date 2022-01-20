@@ -15,16 +15,17 @@
     padding-top: h.rem(20px)
 
     &__heading
-      grid-column: span 10/span 10
-      grid-column-start: 2
-      font-weight: normal
-      font-family: h.$secondary-font
-      font-size: h.rem(78px)
-      font-weight: normal
-      height: h.rem(425px)
+      overflow: hidden
+      text-indent: 101%
+      white-space: nowrap
       max-width: h.rem(425px)
-      padding: h.rem(50px 0 0)
-      margin: 0
+      background:
+        image: url(../images/heading.svg)
+        repeat: no-repeat
+        position: center
+        size: contain
+      height: h.rem(425px)
+      font-family: h.$primary-font
 
 
       +h.for-size(phone-only)
@@ -119,19 +120,6 @@
 .compatibility-mode
   .intro
     &__main
-      &__heading
-        overflow: hidden
-        text-indent: 101%
-        white-space: nowrap
-        max-width: h.rem(425px)
-        background:
-          image: url(../images/heading.svg)
-          repeat: no-repeat
-          position: center
-          size: contain
-        height: h.rem(425px)
-        font-family: h.$primary-font
-
       &__cta
         &__text
           font-family: h.$primary-font

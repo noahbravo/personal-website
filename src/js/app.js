@@ -31,7 +31,6 @@ document.onreadystatechange = function () {
 
     setTimeout(() => {
       body.classList.remove(isLoadingClassName)
-      menuActions()
       animateBgColorOnScroll()
       scrollTriggerAnimations()
       ghostAnimation()

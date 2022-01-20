@@ -82,7 +82,9 @@
     "webpack-cli": "4.9.1",
     "webpack-dev-server": "^4.7.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "smooth-scrollbar": "^8.7.3"
+  },
   "repository": {
     "type": "git",
     "url": ""

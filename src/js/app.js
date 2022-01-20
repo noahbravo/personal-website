@@ -3,7 +3,6 @@ import '../sass/style.sass'
 import createAlbums from './albums'
 import menuActions from './menu'
 import {
-  animatePreloader,
   animateBgColorOnScroll,
   scrollTriggerAnimations,
   albumAnimations,
@@ -27,16 +26,12 @@ const isLoadingClassName = 'is-loading'
 
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
-    animatePreloader()
-
-    setTimeout(() => {
-      body.classList.remove(isLoadingClassName)
-      animateBgColorOnScroll()
-      scrollTriggerAnimations()
-      ghostAnimation()
-      createAlbums()
-      albumAnimations()
-    }, 800)
+    body.classList.remove(isLoadingClassName)
+    animateBgColorOnScroll()
+    scrollTriggerAnimations()
+    ghostAnimation()
+    createAlbums()
+    albumAnimations()
   }
 }
 

@@ -1,7 +1,7 @@
 @use "../0-config/helpers" as h
 
 .preloader
-  display: flex
+  display: none
   flex-direction: column
   justify-content: center
   width: 100vw
@@ -35,3 +35,6 @@
 
 .is-loading
   overflow: hidden
+
+  .preloader
+    display: flex

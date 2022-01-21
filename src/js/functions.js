@@ -76,3 +76,14 @@ export function SmoothScroll(target, speed, smooth) {
     )
   })()
 }
+
+export function smoothAnchorScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      })
+    })
+  })
+}

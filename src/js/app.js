@@ -9,7 +9,7 @@ import {
   albumAnimations,
   ghostAnimation
 } from './animations'
-import { importAll, onDocumentReady } from './functions'
+import { importAll, onDocumentReady, smoothAnchorScroll } from './functions'
 import { createImageInteraction } from './canvas-image-interaction'
 
 // Import all media from public
@@ -28,7 +28,14 @@ const isLoadingClassName = 'is-loading'
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
     body.classList.remove(isLoadingClassName)
-    smoothScroll('.scroller')
+    // smooth scroll for laptop screens up
+    if (screen.width >= 1024) {
+      smoothScroll('.scroller')
+    } else {
+      // add functionality otherwise handled by smooth scroll library
+      smoothAnchorScroll()
+    }
+
     animateBgColorOnScroll()
     scrollTriggerAnimations()
     ghostAnimation()

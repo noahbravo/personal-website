@@ -64,7 +64,7 @@ export function smoothScroll(content, viewport, smoothness) {
   panels.forEach((panel, index) => {
     ScrollTrigger.create({
       trigger: panel,
-      start: 'top 70%',
+      start: 'top 50%',
 
       onEnter: () => {
         handleUpdateActiveNavItems(index)
@@ -227,7 +227,7 @@ export function albumAnimations() {
     ...getAlbumSectionSize(),
     ease: 'power1.inOut',
     duration: 1,
-    // start: 'top',
+    start: 'top 50%',
     repeatRefresh: true,
     scrollTrigger: '.inspiration__album__list'
   })

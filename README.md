@@ -1,5 +1,7 @@
 ## Elena Bravo personal website
 
+[Launch website](http://elenabravo.com/) 🚀
+
 ### Stack
 Website was developed using [webpack5-pug-sass-starter](https://github.com/elenabravo/webpack5-pug-sass-starter) as boilerplate.
 It includes the following features:
@@ -20,7 +22,7 @@ It includes the following features:
 - Run `npm run set:data` to start the server and generate the data or `npm run set:data:watch` to do it in watch mode.
 
 
-### Launch the app
+### Run on localhost
 
 - Run `npm run start` to start the development server. This will open the site in localhost:3000.
 - Run `npm run build` to create a production build. This will build the output under the `dist` folder by default.

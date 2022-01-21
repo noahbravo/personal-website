@@ -12,7 +12,7 @@ import {
 import { importAll, onDocumentReady, smoothAnchorScroll } from './functions'
 import { createImageInteraction } from './canvas-image-interaction'
 
-// Import all media from public
+// import all media from public
 importAll(
   require.context(
     '../../public',
@@ -27,15 +27,17 @@ const isLoadingClassName = 'is-loading'
 
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
-    body.classList.remove(isLoadingClassName)
-    // smooth scroll for laptop screens up
+    body.classList.remove(isLoadingClassName) // hide preloader
+
     if (screen.width >= 1024) {
-      smoothScroll('.scroller')
+      // smooth scroll for laptop screens up
+      smoothScroll()
     } else {
       // add functionality otherwise handled by smooth scroll library
       smoothAnchorScroll()
     }
 
+    // init other animations
     animateBgColorOnScroll()
     scrollTriggerAnimations()
     ghostAnimation()
@@ -45,7 +47,7 @@ document.onreadystatechange = function () {
 }
 
 onDocumentReady(function () {
-  menuActions()
+  menuActions() // start menu actions
 
   // Firefox and Safari fixes
   const userAgentString = navigator.userAgent.toLowerCase()

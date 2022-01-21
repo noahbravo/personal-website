@@ -16,9 +16,10 @@ const screenWidths = {
   bigDesktopUp: width >= 1536
 }
 
-export function smoothScroll(content, viewport, smoothness) {
+export function smoothScroll() {
   // smooth scroll
-  const scroller = document.querySelector('.scroller')
+  const scrollerSelector = '.scroller'
+  const scroller = document.querySelector(scrollerSelector)
 
   const bodyScrollBar = Scrollbar.init(scroller, {
     damping: 0.06,
@@ -26,7 +27,7 @@ export function smoothScroll(content, viewport, smoothness) {
     alwaysShowTracks: true
   })
 
-  ScrollTrigger.scrollerProxy('.scroller', {
+  ScrollTrigger.scrollerProxy(scrollerSelector, {
     scrollTop(value) {
       if (arguments.length) {
         bodyScrollBar.scrollTop = value
@@ -49,8 +50,8 @@ export function smoothScroll(content, viewport, smoothness) {
     })
   })
 
-  // handle menu active class name
-  const menuItemsClassName = 'menu__item__link'
+  // toggle menu active class name
+  const menuItemsSelector = '.menu__item__link'
   const panels = document.querySelectorAll('.panel')
 
   panels.forEach((panel, index) => {
@@ -60,7 +61,7 @@ export function smoothScroll(content, viewport, smoothness) {
       end: 'bottom 50%',
       toggleClass: {
         targets: document.querySelector(
-          `.${menuItemsClassName}[href^="#${panel.id}"]`
+          `${menuItemsSelector}[href^="#${panel.id}"]`
         ),
         className: 'active'
       }
@@ -69,16 +70,22 @@ export function smoothScroll(content, viewport, smoothness) {
 }
 
 export function animatePreloader() {
+  const preloaderSelector = '.preloader'
   gsap
     .timeline({
       defaults: { duration: 0.2 }
     })
-    .to('.preloader', { opacity: 0, y: '-100%' })
-    .to('.preloader', { width: 0, height: 0, visibility: 'hidden' })
+    .to(preloaderSelector, { opacity: 0, y: '-100%' })
+    .to(preloaderSelector, { width: 0, height: 0, visibility: 'hidden' })
 }
 
 export function animateBgColorOnScroll() {
   const container = document.querySelector('.main')
+  const colors = {
+    turquoise400: '#005C65',
+    yellow100: '#FFAD00',
+    red100: '#FF0D00'
+  }
 
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -91,7 +98,7 @@ export function animateBgColorOnScroll() {
     container,
     {
       duration: 1,
-      backgroundColor: '#005C65',
+      backgroundColor: colors.turquoise400,
       ease: 'none'
     },
     0
@@ -100,7 +107,7 @@ export function animateBgColorOnScroll() {
       container,
       {
         duration: 1,
-        backgroundColor: '#FFAD00',
+        backgroundColor: colors.yellow100,
         ease: 'none'
       },
       1
@@ -109,7 +116,7 @@ export function animateBgColorOnScroll() {
       container,
       {
         duration: 1,
-        backgroundColor: '#FF0D00',
+        backgroundColor: colors.red100,
         ease: 'none'
       },
       2
@@ -117,17 +124,29 @@ export function animateBgColorOnScroll() {
 }
 
 export function scrollTriggerAnimations() {
+  const selectors = {
+    about: {
+      container: '.about__profile__container',
+      bolt: '.about--bolt',
+      skull: '.about--skull'
+    },
+    stack: {
+      container: '#stack',
+      skelly: '.stack--skelly'
+    }
+  }
+
   const aboutTl = gsap.timeline({
     scrollTrigger: {
       scrub: true,
-      trigger: '.about__profile__container',
+      trigger: selectors.about.container,
       start: 'top 70%',
       toggleActions: 'play none none reverse'
     }
   })
   aboutTl
     .to(
-      '.about--bolt',
+      selectors.about.bolt,
       {
         y: screenWidths.phoneOnly ? 20 : 80,
         ease: 'power1.inOut'
@@ -135,7 +154,7 @@ export function scrollTriggerAnimations() {
       0
     )
     .to(
-      '.about__profile__container',
+      selectors.about.container,
       {
         y: -1,
         ease: 'power1.inOut'
@@ -143,16 +162,16 @@ export function scrollTriggerAnimations() {
       0
     )
 
-  gsap.to('.about--skull', {
+  gsap.to(selectors.about.skull, {
     rotation: 360 * 2.98,
     scale: 1,
     ease: 'power1.inOut',
     duration: 1,
-    scrollTrigger: '.about--skull'
+    scrollTrigger: selectors.about.skull
   })
 
   aboutTl.to(
-    '.about--skull',
+    selectors.about.skull,
     {
       y: -140,
       ease: 'power1.inOut'
@@ -163,13 +182,12 @@ export function scrollTriggerAnimations() {
   const stackTl = gsap.timeline({
     scrollTrigger: {
       scrub: true,
-      trigger: '#stack',
+      trigger: selectors.stack.container,
       start: 'top 70%'
-      // toggleActions: 'play none none reverse'
     }
   })
   stackTl.to(
-    '.stack--skelly',
+    selectors.stack.skelly,
     {
       y: -180,
       ease: 'power1.inOut'
@@ -215,16 +233,21 @@ export function albumAnimations() {
     }
   }
 
-  gsap.to('.inspiration__album', {
+  const selectors = {
+    container: '.inspiration__album__list',
+    album: '.inspiration__album'
+  }
+
+  gsap.to(selectors.album, {
     ...getAlbumSectionSize(),
     ease: 'power1.inOut',
     duration: 1,
-    start: 'top 50%',
+    // start: 'top 50%',
     repeatRefresh: true,
-    scrollTrigger: '.inspiration__album__list'
+    scrollTrigger: selectors.container
   })
 
-  Draggable.create('.inspiration__album', {
+  Draggable.create(selectors.album, {
     type: 'x,y',
     edgeResistance: 0.65,
     bounds: '.main',

@@ -39,11 +39,13 @@ html.no-js(lang='en')
       include ../includes/header/index.pug
       include ../includes/nav/index.pug
 
-      main.main
-        .main--wrap
-          include ../includes/sections/intro.pug
-          include ../includes/sections/about.pug
-          include ../includes/sections/stack.pug
-          include ../includes/sections/inspiration.pug
-          include ../includes/sections/contact.pug
-          include ../includes/footer/index.pug
+      .scroller
+        main.main
+          .main--wrap
+            include ../includes/sections/intro.pug
+            include ../includes/sections/about.pug
+            include ../includes/sections/stack.pug
+            include ../includes/sections/inspiration.pug
+            .panel
+              include ../includes/sections/contact.pug
+              include ../includes/footer/index.pug

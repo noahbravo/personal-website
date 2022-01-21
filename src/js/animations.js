@@ -17,9 +17,15 @@ const screenWidths = {
 }
 
 export function smoothScroll(content, viewport, smoothness) {
-  const bodyScrollBar = Scrollbar.init(document.querySelector('.scroller'), {
-    damping: 0.07
+  // smooth scroll
+  const scroller = document.querySelector('.scroller')
+
+  const bodyScrollBar = Scrollbar.init(scroller, {
+    damping: 0.06,
+    delegateTo: document,
+    alwaysShowTracks: true
   })
+
   ScrollTrigger.scrollerProxy('.scroller', {
     scrollTop(value) {
       if (arguments.length) {
@@ -28,96 +34,46 @@ export function smoothScroll(content, viewport, smoothness) {
       return bodyScrollBar.scrollTop
     }
   })
+
   bodyScrollBar.addListener(ScrollTrigger.update)
+  ScrollTrigger.defaults({ scroller: scroller })
 
-  // content = gsap.utils.toArray(content)[0]
-  // smoothness = smoothness || 1
+  // handle anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      const scrollToHere = document.querySelector(
+        this.getAttribute('href')
+      ).offsetTop
+      bodyScrollBar.scrollTo(0, scrollToHere, 1000)
+    })
+  })
 
-  // gsap.set(viewport || content.parentNode, {
-  //   overflow: 'hidden',
-  //   position: 'fixed',
-  //   height: '100%',
-  //   width: '100%',
-  //   top: 0,
-  //   left: 0,
-  //   right: 0,
-  //   bottom: 0
-  // })
-  // gsap.set(content, { overflow: 'visible', width: '100%' })
+  // handle menu active class name
+  const menuItems = document.querySelectorAll('.menu__item__link')
+  const panels = document.querySelectorAll('.panel')
 
-  // const getProp = gsap.getProperty(content)
-  // const setProp = gsap.quickSetter(content, 'y', 'px')
-  // const setScroll = ScrollTrigger.getScrollFunc(window)
-  // const removeScroll = () => (content.style.overflow = 'visible')
-  // const killScrub = (trigger) => {
-  //   const scrub = trigger.getTween
-  //     ? trigger.getTween()
-  //     : gsap.getTweensOf(trigger.animation)[0] // getTween() was added in 3.6.2
-  //   scrub && scrub.kill()
-  //   trigger.animation.progress(trigger.progress)
-  // }
-  // let height
-  // let isProxyScrolling
+  const handleUpdateActiveNavItems = (index) => {
+    menuItems.forEach((element) => {
+      element.classList.remove('active')
+    })
+    const currentNavItem = menuItems[index - 1]
+    if (currentNavItem) currentNavItem.classList.add('active')
+  }
 
-  // function refreshHeight() {
-  //   height = content.clientHeight
-  //   content.style.overflow = 'visible'
-  //   document.body.style.height = height + 'px'
-  //   return height - document.documentElement.clientHeight
-  // }
+  panels.forEach((panel, index) => {
+    ScrollTrigger.create({
+      trigger: panel,
+      start: 'top 70%',
 
-  // ScrollTrigger.addEventListener('refresh', () => {
-  //   removeScroll()
-  //   requestAnimationFrame(removeScroll)
-  // })
-  // ScrollTrigger.defaults({ scroller: content })
-  // ScrollTrigger.prototype.update = (p) => p // works around an issue in ScrollTrigger 3.6.1 and earlier (fixed in 3.6.2, so this line could be deleted if you're using 3.6.2 or later)
-
-  // ScrollTrigger.scrollerProxy(content, {
-  //   scrollTop(value) {
-  //     if (arguments.length) {
-  //       isProxyScrolling = true // otherwise, if snapping was applied (or anything that attempted to SET the scroll proxy's scroll position), we'd set the scroll here which would then (on the next tick) update the content tween/ScrollTrigger which would try to smoothly animate to that new value, thus the scrub tween would impede the progress. So we use this flag to respond accordingly in the ScrollTrigger's onUpdate and effectively force the scrub to its end immediately.
-  //       setProp(-value)
-  //       setScroll(value)
-  //       return
-  //     }
-  //     return -getProp('y')
-  //   },
-  //   scrollHeight: () => document.body.scrollHeight,
-  //   getBoundingClientRect() {
-  //     return {
-  //       top: 0,
-  //       left: 0,
-  //       width: window.innerWidth,
-  //       height: window.innerHeight
-  //     }
-  //   }
-  // })
-
-  // return ScrollTrigger.create({
-  //   animation: gsap.fromTo(
-  //     content,
-  //     { y: 0 },
-  //     {
-  //       y: () => document.documentElement.clientHeight - height,
-  //       ease: 'none',
-  //       onUpdate: ScrollTrigger.update
-  //     }
-  //   ),
-  //   scroller: window,
-  //   invalidateOnRefresh: true,
-  //   start: 0,
-  //   end: refreshHeight,
-  //   refreshPriority: -999,
-  //   scrub: smoothness,
-  //   onUpdate: (self) => {
-  //     if (isProxyScrolling) {
-  //       killScrub(self)
-  //       isProxyScrolling = false
-  //     }
-  //   },
-  //   onRefresh: killScrub // when the screen resizes, we just want the animation to immediately go to the appropriate spot rather than animating there, so basically kill the scrub.
-  // })
+      onEnter: () => {
+        handleUpdateActiveNavItems(index)
+      },
+      onEnterBack: () => {
+        handleUpdateActiveNavItems(index)
+      }
+    })
+  })
 }
 
 export function animatePreloader() {
@@ -173,7 +129,7 @@ export function scrollTriggerAnimations() {
     scrollTrigger: {
       scrub: true,
       trigger: '.about__profile__container',
-      start: 'top center',
+      start: 'top 70%',
       toggleActions: 'play none none reverse'
     }
   })
@@ -181,7 +137,7 @@ export function scrollTriggerAnimations() {
     .to(
       '.about--bolt',
       {
-        y: screenWidths.phoneOnly ? 20 : 100,
+        y: screenWidths.phoneOnly ? 20 : 80,
         ease: 'power1.inOut'
       },
       0
@@ -216,7 +172,7 @@ export function scrollTriggerAnimations() {
     scrollTrigger: {
       scrub: true,
       trigger: '#stack',
-      start: 'top center'
+      start: 'top 70%'
       // toggleActions: 'play none none reverse'
     }
   })

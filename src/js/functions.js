@@ -76,34 +76,3 @@ export function SmoothScroll(target, speed, smooth) {
     )
   })()
 }
-
-export function isInViewport(element) {
-  let top = element.offsetTop
-  let left = element.offsetLeft
-  const width = element.offsetWidth
-  const height = element.offsetHeight
-
-  while (element.offsetParent) {
-    element = element.offsetParent
-    top += element.offsetTop
-    left += element.offsetLeft
-  }
-
-  return (
-    top < window.pageYOffset + window.innerHeight &&
-    left < window.pageXOffset + window.innerWidth &&
-    top + height > window.pageYOffset &&
-    left + width > window.pageXOffset
-  )
-}
-
-export function smoothAnchorScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      })
-    })
-  })
-}

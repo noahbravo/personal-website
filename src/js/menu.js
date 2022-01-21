@@ -1,5 +1,3 @@
-import { isInViewport } from './functions'
-
 export default function mobileActions() {
   const { body } = document
 
@@ -33,29 +31,4 @@ export default function mobileActions() {
       body.classList.remove(openClassName)
     })
   })
-
-  // handle menu active class name
-  const menuItems = document.querySelectorAll('.menu__item__link')
-  document.addEventListener(
-    'scroll',
-    function () {
-      menuItems.forEach((item) => {
-        const section = item.getAttribute('href')
-        const elementIsInViewPort = isInViewport(
-          document.querySelector(section)
-        )
-        const activeItem = document.querySelector('.menu__item__link.active')
-        if (window.scrollY === 0 && activeItem) {
-          activeItem.classList.remove('active')
-        }
-        if (elementIsInViewPort && !item.classList.contains('active')) {
-          if (activeItem) activeItem.classList.remove('active')
-          item.classList.add('active')
-        }
-      })
-    },
-    {
-      passive: true
-    }
-  )
 }

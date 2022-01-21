@@ -2,22 +2,23 @@
 
 .header
   position: absolute
-  top: 0
-  left: 0
-  z-index: 20
-  width: 100%
-  padding: h.rem(40px 0)
+  top: h.rem(40px)
+  left: h.rem(20px)
+  z-index: 50
 
-  +h.for-size(tablet-portrait-up)
-    padding: h.rem(40px 0 0)
+  +h.for-size(tablet-landscape-up)
+    left: h.rem(20px)
 
   +h.for-size(laptop-up)
     position: fixed
-    padding-top: h.$main-padding
+    top: h.$main-padding
+    left: h.rem(40px)
+
+  +h.for-size(big-desktop-up)
+    left: h.rem(100px)
 
   &__logo
     width: h.rem(120px)
 
     +h.for-size(tablet-portrait-up)
       width: h.rem(150px)
-

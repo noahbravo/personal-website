@@ -3,13 +3,17 @@
 .menu
   display: none
   position: fixed
-  width: 100%
-  bottom: 0
+  bottom: h.$main-padding
   right: 0
-  padding-bottom: h.$main-padding
+  z-index: 50
 
   +h.for-size(laptop-up)
     display: flex
+    padding-top: h.$main-padding
+    right: h.rem(40px)
+
+  +h.for-size(big-desktop-up)
+    right: h.rem(100px)
 
   &__item-list
     display: flex
@@ -29,8 +33,6 @@
       padding-bottom: 0
 
     &__link
-      z-index: 20
-
       &__label
         user-select: none
 
@@ -88,7 +90,7 @@
   width: 100vw
   top: 0
   left: 0
-  z-index: 50
+  z-index: 60
   pointer-events: none
   overflow: hidden
   height: 100vh

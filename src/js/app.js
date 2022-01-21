@@ -3,12 +3,13 @@ import '../sass/style.sass'
 import createAlbums from './albums'
 import menuActions from './menu'
 import {
+  smoothScroll,
   animateBgColorOnScroll,
   scrollTriggerAnimations,
   albumAnimations,
   ghostAnimation
 } from './animations'
-import { importAll, onDocumentReady, smoothAnchorScroll } from './functions'
+import { importAll, onDocumentReady } from './functions'
 import { createImageInteraction } from './canvas-image-interaction'
 
 // Import all media from public
@@ -27,6 +28,7 @@ const isLoadingClassName = 'is-loading'
 document.onreadystatechange = function () {
   if (document.readyState === 'complete') {
     body.classList.remove(isLoadingClassName)
+    smoothScroll('.scroller')
     animateBgColorOnScroll()
     scrollTriggerAnimations()
     ghostAnimation()
@@ -36,7 +38,6 @@ document.onreadystatechange = function () {
 }
 
 onDocumentReady(function () {
-  smoothAnchorScroll()
   menuActions()
 
   // Firefox and Safari fixes

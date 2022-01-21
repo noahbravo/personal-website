@@ -50,27 +50,19 @@ export function smoothScroll(content, viewport, smoothness) {
   })
 
   // handle menu active class name
-  const menuItems = document.querySelectorAll('.menu__item__link')
+  const menuItemsClassName = 'menu__item__link'
   const panels = document.querySelectorAll('.panel')
-
-  const handleUpdateActiveNavItems = (index) => {
-    menuItems.forEach((element) => {
-      element.classList.remove('active')
-    })
-    const currentNavItem = menuItems[index - 1]
-    if (currentNavItem) currentNavItem.classList.add('active')
-  }
 
   panels.forEach((panel, index) => {
     ScrollTrigger.create({
       trigger: panel,
       start: 'top 50%',
-
-      onEnter: () => {
-        handleUpdateActiveNavItems(index)
-      },
-      onEnterBack: () => {
-        handleUpdateActiveNavItems(index)
+      end: 'bottom 50%',
+      toggleClass: {
+        targets: document.querySelector(
+          `.${menuItemsClassName}[href^="#${panel.id}"]`
+        ),
+        className: 'active'
       }
     })
   })

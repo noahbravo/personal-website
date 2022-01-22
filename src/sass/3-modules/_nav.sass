@@ -13,7 +13,7 @@
     right: h.rem(40px)
 
   +h.for-size(big-desktop-up)
-    right: h.rem(100px)
+    right: calc(((100vw - h.rem(1280px))/2) - h.rem(28px))
 
   &__item-list
     display: flex

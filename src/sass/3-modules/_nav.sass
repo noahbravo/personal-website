@@ -141,10 +141,23 @@
       left: 50%
       transform: translateX(-50%)
       background:
-        image: url(../images/menu.svg)
         repeat: no-repeat
         position: center
       margin-top: 2.3rem
+
+    &--menu
+      .mobile-menu__button--icon
+        background:
+          image: url(../images/menu.svg)
+
+    &--close
+      display: none
+      .mobile-menu__button--icon
+        width: 2.5rem
+        height: 2.5rem
+        transform: translateY(-30%) translateX(-50%)
+        background:
+          image: url(../images/close.svg)
 
     &--label
       position: absolute
@@ -195,11 +208,9 @@
       transition: all .35s
 
     &__button
+      &--menu
+        display: none
 
-      &--icon
-        width: 2.5rem
-        height: 2.5rem
-        transform: translateY(-30%) translateX(-50%)
-        background:
-          image: url(../images/close.svg)
+      &--close
+        display: flex
 

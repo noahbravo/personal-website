@@ -74,23 +74,23 @@
     &--link
       display: inline-flex
       position: relative
-      margin: h.rem(0 5px)
+      margin: h.rem(0 6px)
 
-      &:before
+      &::before
         content: ""
         position: absolute
         background-color: h.$white
         width: 0
         height: 0.15rem
         bottom: 0.75rem
-        left: 0
+        left: -0.21rem
         visibility: hidden
-        transition: all 0.2s ease-in-out
+        transition: all 0.185s ease-in-out
 
       &:hover
         &::before
           visibility: visible
-          width: 100%
+          width: 115%
 
   &__profile
     &__container

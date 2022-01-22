@@ -17,9 +17,7 @@ export default function mobileActions() {
     )
 
     // toggle body className
-    const isActive = body.classList.contains(openClassName)
-    const classListAction = isActive ? 'remove' : 'add'
-    body.classList[classListAction](openClassName)
+    body.classList.toggle(openClassName)
   })
 
   // remove open class from body when menu item is clicked

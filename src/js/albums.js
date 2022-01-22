@@ -18,7 +18,7 @@ export default function createAlbums() {
       (screenWidths.phoneOnly && index + 1 >= albumLimit) ||
       !screenWidths.phoneOnly
     ) {
-      const { url: albumImgUrl } = album.images[1]
+      const { url: albumImgUrl, name: albumName } = album.images[1]
       const { id: artistId, name: artistName } = artists[0]
       const currentArtist = artistsData.artists.find(
         ({ id }) => id === artistId
@@ -29,6 +29,7 @@ export default function createAlbums() {
       albumElement.classList.add('inspiration__album')
       const albumImg = document.createElement('img')
       albumImg.src = albumImgUrl
+      albumImg.alt = albumName
       albumElement.append(albumImg)
 
       const overlayElement = document.createElement('div')
@@ -40,6 +41,7 @@ export default function createAlbums() {
 
       const artistImg = document.createElement('img')
       artistImg.src = artistImgUrl
+      artistImg.alt = artistName
       artistImg.classList.add('inspiration__album__artist--img')
       artistElement.append(artistImg)
 

@@ -1,7 +1,7 @@
 @use "../0-config/helpers" as h
 
 .footer
-  padding: h.rem(28px 0 20px)
+  padding: h.rem(28px 0)
   width: 100%
   background: linear-gradient(180deg,transparent,rgba(0,0,0,.3))
 
@@ -42,7 +42,8 @@
       &__image
         width: h.rem(16px)
         height: h.rem(16px)
-        transform: translateY(h.rem(2px))
+        transform: translateY(h.rem(2px)) scale(1)
+        transition: transform 0.2s
 
       // &:before
       //   position: absolute
@@ -56,6 +57,7 @@
       //   transform-origin: 50% 0
       //   text-align: center
 
-    // &:hover .footer__link__icon,
-    // &:focus .footer__link__icon
+    &:hover .footer__link__icon__image,
+    &:focus .footer__link__icon__image
+      transform: translateY(h.rem(2px)) scale(1.15)
     //   transform: rotateX(90deg) translateY(-22px)

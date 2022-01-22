@@ -24,7 +24,8 @@ export function smoothScroll() {
   const bodyScrollBar = Scrollbar.init(scroller, {
     damping: 0.06,
     delegateTo: document,
-    alwaysShowTracks: true
+    alwaysShowTracks: true,
+    continuousScrolling: false
   })
 
   ScrollTrigger.scrollerProxy(scrollerSelector, {
@@ -52,16 +53,16 @@ export function smoothScroll() {
 
   // toggle menu active class name
   const menuItemsSelector = '.menu__item__link'
-  const panels = document.querySelectorAll('.panel')
+  const sections = document.querySelectorAll('.section')
 
-  panels.forEach((panel, index) => {
+  sections.forEach((section, index) => {
     ScrollTrigger.create({
-      trigger: panel,
+      trigger: section,
       start: 'top 50%',
       end: 'bottom 50%',
       toggleClass: {
         targets: document.querySelector(
-          `${menuItemsSelector}[href^="#${panel.id}"]`
+          `${menuItemsSelector}[href^="#${section.id}"]`
         ),
         className: 'active'
       }
@@ -140,27 +141,18 @@ export function scrollTriggerAnimations() {
     scrollTrigger: {
       scrub: true,
       trigger: selectors.about.container,
-      start: 'top 70%',
+      start: 'top 50%',
       toggleActions: 'play none none reverse'
     }
   })
-  aboutTl
-    .to(
-      selectors.about.bolt,
-      {
-        y: screenWidths.phoneOnly ? 20 : 80,
-        ease: 'power1.inOut'
-      },
-      0
-    )
-    .to(
-      selectors.about.container,
-      {
-        y: -1,
-        ease: 'power1.inOut'
-      },
-      0
-    )
+  aboutTl.to(
+    selectors.about.bolt,
+    {
+      y: screenWidths.phoneOnly ? 20 : 80,
+      ease: 'power1.inOut'
+    },
+    0
+  )
 
   gsap.to(selectors.about.skull, {
     rotation: 360 * 2.98,

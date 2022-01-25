@@ -25,7 +25,7 @@ export function smoothScroll() {
     damping: 0.06,
     delegateTo: document,
     alwaysShowTracks: true,
-    continuousScrolling: false
+    continuousScrolling: true
   })
 
   ScrollTrigger.scrollerProxy(scrollerSelector, {

@@ -33,30 +33,34 @@
     margin: h.rem(20px 0 0)
 
     +h.for-size(tablet-landscape-up)
-      font-size: h.rem(36px)
+      line-height: 1
+      font-family: h.$tertiary-font
+      font-size: h.rem(62px)
 
     +h.for-size(laptop-up)
       grid-column: span 7/span 7
       grid-column-start: 3
-      font-size: h.rem(37px)
+      font-size: h.rem(60px)
 
     +h.for-size(desktop-up)
-      font-size: h.rem(42px)
+      font-size: h.rem(62px)
 
   &__img
     display: none
     align-self: flex-end
-    transform: translateY(80px)
     pointer-events: none
 
     +h.for-size(laptop-up)
       display: flex
+      transform: translateY(80px) translateX(40px)
+
+    +h.for-size(desktop-up)
+      transform: translateY(80px) translateX(0)
 
 .compatibility-mode
   .stack
-    &__heading, &__text
-      font-family: h.$primary-font
+    &__heading
+      font-family: h.$tertiary-font
       text-transform: uppercase
-
-    &__text
-      line-height: 1.4
+      font-size: h.rem(34px)
+      margin-bottom: 0

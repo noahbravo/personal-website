@@ -16,12 +16,15 @@
 
   &__heading
     grid-column: span 12/span 12
-    font-family: h.$secondary-font
-    font-weight: normal
+    max-width: h.rem(60px)
+    max-height: h.rem(60px)
+    background:
+      image: url(../images/about-heading.svg)
 
     +h.for-size(laptop-up)
       grid-column: span 2/span 2
       grid-column-start: 3
+      margin-top: h.rem(12px)
 
   &__text
     font-size: h.$header-5
@@ -181,11 +184,3 @@
 
       +h.for-size(desktop-up)
         transform: translateY(h.rem(-160px)) translateX(h.rem(-50px))
-
-.compatibility-mode
-  .about
-    &__heading
-      font-family: h.$tertiary-font
-      text-transform: uppercase
-      font-size: h.rem(34px)
-      margin: h.rem(12px 0 0)

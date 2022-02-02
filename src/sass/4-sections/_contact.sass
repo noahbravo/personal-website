@@ -16,18 +16,23 @@
     grid-template-columns: repeat(12,minmax(0,1fr))
 
   &__heading
-    font-family: h.$secondary-font
-    font-weight: normal
     margin: 0
 
     &--h2
-      grid-column: span 12/span 12
+      grid-column: span 1/span 1
+      width: h.rem(128px)
+      background:
+        image: url(../images/contact-heading.svg)
 
       +h.for-size(laptop-up)
         grid-column-start: 3
 
     &--h3
       grid-column: span 3/span 3
+      width: h.rem(85px)
+      height: h.rem(30px)
+      background:
+        image: url(../images/follow-heading.svg)
 
       +h.for-size(phone-only)
         grid-column: span 4/span 4
@@ -112,15 +117,3 @@
         &:hover, &.active
           .contact__social__item__link--hover
             width: 100%
-
-.compatibility-mode
-  .contact
-    &__heading
-      font-family: h.$tertiary-font
-      text-transform: uppercase
-
-      &--h2
-        font-size: h.rem(34px)
-
-      &--h3
-        font-size: h.rem(24px)

@@ -20,16 +20,14 @@
     width: 100%
     position: absolute
 
-
   &__heading
-    font-family: h.$secondary-font
-    font-weight: normal
     font-size: h.rem(38px)
     transform: translateY(h.rem(286px))
-    user-select: none
+    background:
+      image: url(../images/inspiration-heading.svg)
 
     +h.for-size(tablet-portrait-up)
-      font-size: h.rem(68px)
+      font-size: h.rem(63px)
 
   &__album
     width: h.rem(150px)
@@ -73,11 +71,3 @@
       &--text
         font-size: h.$helper-text
         line-height: 1.2
-
-.compatibility-mode
-  .inspiration
-    &__heading
-      font-family: h.$tertiary-font
-      text-transform: uppercase
-      font-size: h.rem(74px)
-

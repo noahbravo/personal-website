@@ -21,12 +21,14 @@ export function smoothScroll() {
   const scrollerSelector = '.scroller'
   const scroller = document.querySelector(scrollerSelector)
 
-  const bodyScrollBar = Scrollbar.init(scroller, {
+  const smoothScrollOptions = {
     damping: 0.06,
-    delegateTo: document,
-    alwaysShowTracks: true,
-    continuousScrolling: true
-  })
+    // delegateTo: document,
+    alwaysShowTracks: false,
+    continuousScrolling: false
+  }
+
+  const bodyScrollBar = Scrollbar.init(scroller, smoothScrollOptions)
 
   ScrollTrigger.scrollerProxy(scrollerSelector, {
     scrollTop(value) {

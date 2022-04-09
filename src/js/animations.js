@@ -232,14 +232,43 @@ export function albumAnimations() {
     album: '.inspiration__album'
   }
 
-  gsap.to(selectors.album, {
-    ...getAlbumSectionSize(),
-    ease: 'power1.inOut',
-    duration: 1,
-    // start: 'top 50%',
-    repeatRefresh: true,
-    scrollTrigger: selectors.container
+  const albumTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: selectors.container
+    }
   })
+
+  gsap.to(selectors.album, { x: '-200%' })
+
+  albumTl
+    .to(
+      selectors.album,
+      {
+        autoAlpha: 1,
+        duration: 0.1
+      },
+      0
+    )
+    .to(
+      selectors.album,
+      {
+        ...getAlbumSectionSize(),
+        ease: 'power4.inOut',
+        duration: 1.5
+      },
+      0
+    )
+
+  // gsap.fromTo(
+  //   selectors.album,
+  //   { autoAlpha: 1 },
+  //   {
+  //     ...getAlbumSectionSize(),
+  //     ease: 'power1.inOut',
+  //     duration: 1,
+  //     scrollTrigger: selectors.container
+  //   }
+  // )
 
   Draggable.create(selectors.album, {
     type: 'x,y',

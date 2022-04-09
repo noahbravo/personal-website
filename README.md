@@ -1,9 +1,9 @@
 ## Elena Bravo personal website
 
-[Launch website](http://elenabravo.com/) 🚀
+[Visit website](http://elenabravo.com/) 🚀
 
 ### Stack
-Website was developed using [webpack5-pug-sass-starter](https://github.com/elenabravo/webpack5-pug-sass-starter) as a boilerplate.
+This website was developed using [webpack5-pug-sass-starter](https://github.com/elenabravo/webpack5-pug-sass-starter) as a boilerplate.
 It includes the following features:
 
 - Webpack 5

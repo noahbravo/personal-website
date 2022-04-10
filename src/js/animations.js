@@ -249,26 +249,15 @@ export function albumAnimations() {
       },
       0
     )
-    .to(
+    .staggerTo(
       selectors.album,
+      0.75,
       {
         ...getAlbumSectionSize(),
-        ease: 'power4.inOut',
-        duration: 1.5
+        ease: 'power4.inOut'
       },
-      0
+      -0.1
     )
-
-  // gsap.fromTo(
-  //   selectors.album,
-  //   { autoAlpha: 1 },
-  //   {
-  //     ...getAlbumSectionSize(),
-  //     ease: 'power1.inOut',
-  //     duration: 1,
-  //     scrollTrigger: selectors.container
-  //   }
-  // )
 
   Draggable.create(selectors.album, {
     type: 'x,y',

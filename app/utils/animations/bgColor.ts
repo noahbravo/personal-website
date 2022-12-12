@@ -1,4 +1,5 @@
 enum Colors {
+  turquoise200 = '#0098a8',
   turquoise400 = '#005C65',
   yellow100 = '#FFAD00',
   red100 = '#FF0D00'
@@ -6,6 +7,7 @@ enum Colors {
 
 export function animateBgColorOnScroll(gsap: GSAP, container: HTMLElement) {
   const { offsetHeight: containerHeight } = container
+  gsap.to(container, { backgroundColor: Colors.turquoise200 })
 
   const tl = gsap.timeline({
     scrollTrigger: {

@@ -29,7 +29,7 @@ const Layout = ({
   }, [animateBgColorOnScroll])
 
   return (
-    <Container position="relative" bgColor="turquoise-200">
+    <Container position="relative">
       <Header />
       <Menu animateMobileMenu={animateMobileMenu} />
       <Container width="100vw" minHeight={{ lg: 'screen' }} overflow="auto">

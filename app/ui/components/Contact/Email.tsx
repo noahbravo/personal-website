@@ -1,6 +1,5 @@
-import React from 'react'
-import { Container, Grid, Img, Link, Text, Box } from '~/ui/primitives'
 import { toRem } from '~/styles'
+import { Container, Grid, Img, Link, Text, Box } from '~/ui/primitives'
 import heading from '~/assets/img/contact-heading.svg'
 import smLine from '~/assets/img/hover-line-sm.svg'
 import xlLine from '~/assets/img/hover-line-xl.svg'

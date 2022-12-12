@@ -1,5 +1,5 @@
-import { Container, Img } from '~/ui/primitives'
 import { toRem } from '~/styles'
+import { Container, Img } from '~/ui/primitives'
 import logo from '~/assets/img/logo.svg'
 
 const Header = () => {
@@ -11,17 +11,7 @@ const Header = () => {
       left={{ xs: 20, lg: 40, '2xl': `calc(((100vw - ${toRem(1280)})/2) - ${toRem(28)})` }}
       zIndex="z40"
     >
-      <Img
-        src={logo}
-        alt="Elena Bravo logo"
-        css={{
-          '@sm': {
-            width: toRem(150)
-          },
-          width: toRem(120)
-        }}
-        pointerEvents="none"
-      />
+      <Img src={logo} alt="Elena Bravo logo" imgWidth={{ xs: 120, sm: 150 }} pointerEvents="none" />
     </Container>
   )
 }

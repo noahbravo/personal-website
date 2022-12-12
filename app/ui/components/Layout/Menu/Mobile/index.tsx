@@ -1,7 +1,6 @@
 import type { Animations } from '~/types/animations'
 import type { MenuProps } from '../types'
 import { Container, Flex, Img, List, ListItem, Link, Text } from '~/ui/primitives'
-import { toRem } from '~/styles'
 import Buttons from './Buttons'
 import logo from '~/assets/img/logo.svg'
 import grungepattern from '~/assets/img/grungepattern.png'
@@ -49,12 +48,7 @@ const MobileMenu = ({ menuItems, networks, animateMobileMenu }: MobileMenuProps)
             <Img
               src={logo}
               alt="Elena Bravo logo"
-              css={{
-                '@sm': {
-                  width: toRem(150)
-                },
-                width: toRem(120)
-              }}
+              imgWidth={{ xs: 120, sm: 150 }}
               pointerEvents="none"
             />
           </Container>

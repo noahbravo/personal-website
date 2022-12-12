@@ -1,5 +1,5 @@
-import { Flex, Img, Link, Box } from '~/ui/primitives'
 import { toRem } from '~/styles'
+import { Flex, Img, Link, Box } from '~/ui/primitives'
 import ctaText from '~/assets/img/intro-cta.svg'
 
 const CTA = () => (

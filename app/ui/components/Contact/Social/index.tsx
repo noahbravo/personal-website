@@ -1,6 +1,6 @@
 import { Grid, Img, Flex, Box, Link, Text } from '~/ui/primitives'
-import heading from '~/assets/img/follow-heading.svg'
 import { toRem } from '~/styles'
+import heading from '~/assets/img/follow-heading.svg'
 import socialNetworks from './networks'
 
 const ContactSocial = () => (
@@ -10,8 +10,8 @@ const ContactSocial = () => (
       alt="Follow"
       gridColumn={{ xs: '3', lg: '2' }}
       gridColumnStart={{ lg: '3' }}
-      width={85}
-      height={30}
+      width={toRem(85)}
+      height={toRem(30)}
     />
     <Flex direction="col" gridColumnStart={{ xs: '9', sm: 'unset' }}>
       {socialNetworks.map(({ name, href }) => (

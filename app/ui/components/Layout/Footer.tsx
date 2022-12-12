@@ -1,5 +1,5 @@
-import { Container, Flex, Text, Link, Img } from '~/ui/primitives'
 import { toRem } from '~/styles'
+import { Container, Flex, Text, Link, Img } from '~/ui/primitives'
 import spotifyLogo from '~/assets/img/spotify.svg'
 
 const year = new Date().getFullYear()

@@ -1,7 +1,7 @@
+import { toRem } from '~/styles'
 import type { Animations } from '~/types/animations'
 import { useEffect } from 'react'
 import { Container, Grid, Img, Text } from '~/ui/primitives'
-import { toRem } from '~/styles'
 import heading from '~/assets/img/stack-heading.svg'
 import skelly from '~/assets/img/skelly.svg'
 
@@ -21,7 +21,7 @@ const Stack = ({ animateStack }: StackProps) => {
             alt="Stack/Technologies"
             gridColumn={{ xs: '3', lg: '2' }}
             gridColumnStart={{ lg: '3' }}
-            width={200}
+            width={toRem(200)}
             css={{
               maxWidth: toRem(200)
             }}

@@ -1,5 +1,5 @@
-import { Container, Grid, Img, Text, Flex, Box } from '~/ui/primitives'
 import { toRem } from '~/styles'
+import { Container, Grid, Img, Text, Flex, Box } from '~/ui/primitives'
 import heading from '~/assets/img/about-heading.svg'
 import profileBw from '~/assets/img/profile-bw.jpg'
 import bolt from '~/assets/img/bolt.svg'

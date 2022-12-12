@@ -1,5 +1,5 @@
-import { Container, Grid, Img, Text } from '~/ui/primitives'
 import { toRem } from '~/styles'
+import { Container, Grid, Img, Text } from '~/ui/primitives'
 import skull from '~/assets/img/skull.svg'
 
 const SecondRow = () => (

@@ -25,9 +25,13 @@ const FirstRow = () => (
       fontSize="lg"
       lineHeight="relaxed"
     >
-      Hi, I'm Elena Bravo, a multidisciplinary front-end developer and digital designer based in
-      Madrid, Spain. With over 7 years of experience working with all types of clients and projects,
-      I thrive on bringing both the technical and visual aspects of digital products to life.
+      Hi, I'm{' '}
+      <Text as="h1" display="inline" fontWeight="normal" fontSize="lg">
+        Elena Bravo
+      </Text>
+      , a multidisciplinary front-end developer and digital designer based in Madrid, Spain. With
+      over 7 years of experience working with all types of clients and projects, I thrive on
+      bringing both the technical and visual aspects of digital products to life.
     </Text>
     <Flex
       className="profileContainer"

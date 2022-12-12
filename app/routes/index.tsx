@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import type { LoaderFunction } from '@remix-run/node'
 import type { AlbumData } from '~/types/albums'
 import { json } from '@remix-run/node'

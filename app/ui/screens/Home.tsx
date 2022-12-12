@@ -1,11 +1,14 @@
 import type { Data } from '~/types/albums'
 import type { Animations } from '~/types/animations'
-import { Layout, Intro, About, Stack, Inspiration, Contact } from '~/ui/components'
+import { Preloader, Layout, Intro, About, Stack, Inspiration, Contact } from '~/ui/components'
 
-type HomeProps = Data & Animations
+interface HomeProps extends Data, Animations {
+  loaded: boolean
+}
 
 const Home = ({
   albums,
+  loaded,
   animateBgColorOnScroll,
   animateAbout,
   animateStack,
@@ -16,17 +19,23 @@ const Home = ({
   createImageInteraction
 }: HomeProps) => {
   return (
-    <Layout
-      animateBgColorOnScroll={animateBgColorOnScroll}
-      animateSmoothScroll={animateSmoothScroll}
-      animateMobileMenu={animateMobileMenu}
-    >
-      <Intro />
-      <About animateAbout={animateAbout} createImageInteraction={createImageInteraction} />
-      <Stack animateStack={animateStack} />
-      <Inspiration albums={albums} animateInspiration={animateInspiration} />
-      <Contact animateContact={animateContact} />
-    </Layout>
+    <>
+      {loaded ? (
+        <Layout
+          animateBgColorOnScroll={animateBgColorOnScroll}
+          animateSmoothScroll={animateSmoothScroll}
+          animateMobileMenu={animateMobileMenu}
+        >
+          <Intro />
+          <About animateAbout={animateAbout} createImageInteraction={createImageInteraction} />
+          <Stack animateStack={animateStack} />
+          <Inspiration albums={albums} animateInspiration={animateInspiration} />
+          <Contact animateContact={animateContact} />
+        </Layout>
+      ) : (
+        <Preloader />
+      )}
+    </>
   )
 }
 

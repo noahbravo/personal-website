@@ -42,6 +42,7 @@ const zIndex = {
   z30: '30',
   z40: '40',
   z50: '50',
+  z60: '60',
   zAuto: 'auto'
 }
 

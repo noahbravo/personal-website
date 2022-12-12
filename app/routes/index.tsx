@@ -18,11 +18,14 @@ const Index = () => {
   const loaded = useOnPageLoad()
   const { createImageInteraction } = useCreateImageInteraction()
 
-  useEffect(() => {
-    console.log(loaded)
-  }, [loaded])
-
-  return <Home albums={albums} {...animations} createImageInteraction={createImageInteraction} />
+  return (
+    <Home
+      albums={albums}
+      loaded={loaded}
+      {...animations}
+      createImageInteraction={createImageInteraction}
+    />
+  )
 }
 
 export default Index

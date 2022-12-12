@@ -1,3 +1,5 @@
+import animations from '~/styles/animations.css'
+
 export const links = [
   {
     rel: 'icon',
@@ -43,6 +45,10 @@ export const links = [
   {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&amp;display=swap'
+  },
+  {
+    rel: 'stylesheet',
+    href: animations
   },
   {
     rel: 'preload',

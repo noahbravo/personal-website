@@ -1,8 +1,11 @@
 import { toRem } from '~/styles'
+import { getExperience } from '~/utils/helpers'
 import { Container, Grid, Img, Text, Flex, Box } from '~/ui/primitives'
 import heading from '~/assets/img/about-heading.svg'
 import profileBw from '~/assets/img/profile-bw.jpg'
 import bolt from '~/assets/img/bolt.svg'
+
+const experience = getExperience()
 
 const FirstRow = () => (
   <Grid templateColumns="12">
@@ -18,20 +21,20 @@ const FirstRow = () => (
       css={{ maxWidth: `${toRem(60)}` }}
     />
     <Text
-      as="p"
+      as="h1"
+      display="inline"
       gridColumn={{ xs: '12', lg: '3' }}
       paddingBottom={{ xs: 80, lg: 20, xl: 0 }}
-      marginY={18}
+      marginTop={{ xs: 18, lg:6 }}
+      marginBottom={18}
+      fontWeight="normal"
       fontSize="lg"
       lineHeight="relaxed"
     >
-      Hi, I'm{' '}
-      <Text as="h1" display="inline" fontWeight="normal" fontSize="lg">
-        Elena Bravo
-      </Text>
-      , a multidisciplinary front-end developer and digital designer based in Madrid, Spain. With
-      over 7 years of experience working with all types of clients and projects, I thrive on
-      bringing both the technical and visual aspects of digital products to life.
+      Hi, I'm Elena Bravo, a multidisciplinary front-end developer and digital designer based in
+      Madrid, Spain. With over {experience} years of experience working with all types of clients
+      and projects, I thrive on bringing both the technical and visual aspects of digital products
+      to life.
     </Text>
     <Flex
       className="profileContainer"

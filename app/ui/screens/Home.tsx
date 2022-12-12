@@ -20,21 +20,18 @@ const Home = ({
 }: HomeProps) => {
   return (
     <>
-      {loaded ? (
-        <Layout
-          animateBgColorOnScroll={animateBgColorOnScroll}
-          animateSmoothScroll={animateSmoothScroll}
-          animateMobileMenu={animateMobileMenu}
-        >
-          <Intro />
-          <About animateAbout={animateAbout} createImageInteraction={createImageInteraction} />
-          <Stack animateStack={animateStack} />
-          <Inspiration albums={albums} animateInspiration={animateInspiration} />
-          <Contact animateContact={animateContact} />
-        </Layout>
-      ) : (
-        <Preloader />
-      )}
+      <Preloader loaded={loaded} />
+      <Layout
+        animateBgColorOnScroll={animateBgColorOnScroll}
+        animateSmoothScroll={animateSmoothScroll}
+        animateMobileMenu={animateMobileMenu}
+      >
+        <Intro />
+        <About animateAbout={animateAbout} createImageInteraction={createImageInteraction} />
+        <Stack animateStack={animateStack} />
+        <Inspiration albums={albums} animateInspiration={animateInspiration} />
+        <Contact animateContact={animateContact} />
+      </Layout>
     </>
   )
 }

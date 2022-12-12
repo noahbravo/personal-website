@@ -30,6 +30,7 @@ export const globalStyles = globalCss({
     backgroundColor: '$black',
     color: '$white',
     fontFamily: '$primary',
-    overflowX: 'hidden'
+    overflowX: 'hidden',
+    overflowY: 'hidden'
   }
 })

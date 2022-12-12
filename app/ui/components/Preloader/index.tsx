@@ -1,15 +1,18 @@
 import { toRem } from '~/styles'
 import { Container, Flex } from '~/ui/primitives'
 
-const Preloader = () => (
+interface PreloaderProps {
+  loaded: boolean
+}
+
+const Preloader = ({ loaded }: PreloaderProps) => (
   <Container
-    className="content"
-    position="relative"
+    position="fixed"
     zIndex="z60"
+    display={loaded ? 'hidden' : 'block'}
     width="100vw"
     height="100vh"
-    opacity="100"
-    visibility="visible"
+    bgColor="black"
   >
     <Flex direction="col" justify="center" width="100%" height="100%">
       <Container variant="wrap">

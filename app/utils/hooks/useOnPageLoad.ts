@@ -6,6 +6,7 @@ export function useOnPageLoad() {
   useEffect(() => {
     const onPageLoad = () => {
       setLoaded(true)
+      document.body.style.setProperty('overflow-y', 'auto')
     }
 
     // Check if the page has already loaded

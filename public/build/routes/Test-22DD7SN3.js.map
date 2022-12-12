@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/Test.tsx"],
+  "sourcesContent": ["export default function Test() {\n  return (\n    <div>\n      <p>123213</p>\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;AAAA;AAAe,SAAR,OAAwB;AAC7B,SACE,mDAAC;AAAA,IACC,6DAAC;AAAA,MAAE;AAAA,OAAH;AAAA;AAAA;AAAA;AAAA,WAAS;AAAA,KADX;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;",
+  "names": []
+}

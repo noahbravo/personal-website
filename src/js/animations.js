@@ -23,7 +23,7 @@ export function smoothScroll() {
 
   const smoothScrollOptions = {
     damping: 0.06,
-    // delegateTo: document,
+    delegateTo: document,
     alwaysShowTracks: false,
     continuousScrolling: false
   }
@@ -232,14 +232,32 @@ export function albumAnimations() {
     album: '.inspiration__album'
   }
 
-  gsap.to(selectors.album, {
-    ...getAlbumSectionSize(),
-    ease: 'power1.inOut',
-    duration: 1,
-    // start: 'top 50%',
-    repeatRefresh: true,
-    scrollTrigger: selectors.container
+  const albumTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: selectors.container
+    }
   })
+
+  gsap.to(selectors.album, { x: '-200%' })
+
+  albumTl
+    .to(
+      selectors.album,
+      {
+        autoAlpha: 1,
+        duration: 0.1
+      },
+      0
+    )
+    .staggerTo(
+      selectors.album,
+      0.75,
+      {
+        ...getAlbumSectionSize(),
+        ease: 'power4.inOut'
+      },
+      -0.1
+    )
 
   Draggable.create(selectors.album, {
     type: 'x,y',

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/index.tsx"],
+  "sourcesContent": ["import { Home } from '~/ui/screens'\nexport default function Index() {\n  return null\n}\n"],
+  "mappings": ";;;AACe,SAAR,QAAyB;AAC9B,SAAO;AACT;",
+  "names": []
+}

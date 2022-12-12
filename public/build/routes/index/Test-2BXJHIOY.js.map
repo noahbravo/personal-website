@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/index/Test.tsx"],
+  "sourcesContent": ["export default function Test() {\n  return (\n    <div>\n      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, illum repudiandae odio voluptas\n      ab optio labore maiores corrupti molestiae, explicabo dolor est expedita quos veniam ullam hic\n      voluptatibus quis obcaecati.\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;AAAA;AAAe,SAAR,OAAwB;AAC7B,SACE,mDAAC;AAAA,IAAI;AAAA,KAAL;AAAA;AAAA;AAAA;AAAA,SAIA;AAEJ;",
+  "names": []
+}

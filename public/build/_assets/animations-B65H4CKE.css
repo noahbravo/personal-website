@@ -1,0 +1,17 @@
+/* app/styles/animations.css */
+@keyframes Rotate {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+@-webkit-keyframes Rotate {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}

@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useMemo, useRef } from 'react'
+import { useEffect, useCallback, useRef } from 'react'
 import gsap from 'gsap'
 import {
   animateBgColorOnScroll,
@@ -11,6 +11,7 @@ import {
 } from '~/utils/animations'
 import { useIsMounted } from './useIsMounted'
 import { useWindowSize } from './useWindowSize'
+import { useScreenWidths } from './useScreenWidths'
 
 type SmoothScrollReturnType = {
   openMenu: () => void
@@ -24,17 +25,7 @@ export function useAnimations() {
 
   const isMounted = useIsMounted()
   const { width } = useWindowSize()
-
-  const screenWidths = useMemo(
-    () => ({
-      phoneOnly: width < 480,
-      phoneUp: width >= 480,
-      laptopUp: width >= 1024,
-      desktopUp: width >= 1280,
-      bigDesktopUp: width >= 1536
-    }),
-    [width]
-  )
+  const screenWidths = useScreenWidths()
 
   useEffect(() => {
     ScrollTrigger.current = require('gsap/ScrollTrigger').ScrollTrigger

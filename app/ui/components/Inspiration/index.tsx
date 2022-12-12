@@ -2,6 +2,7 @@ import type { Data } from '~/types/albums'
 import type { Animations } from '~/types/animations'
 import { useRef, useEffect } from 'react'
 import { toRem } from '~/styles'
+import { useScreenWidths } from '~/utils/hooks'
 import { Container, Flex, Img } from '~/ui/primitives'
 import Album from './album'
 import heading from '~/assets/img/inspiration-heading.svg'
@@ -10,8 +11,17 @@ interface InspirationProps extends Data {
   animateInspiration: Animations['animateInspiration']
 }
 
+const albumLimit = 8
+
 const Inspiration = ({ albums, animateInspiration }: InspirationProps) => {
+  const screenWidths = useScreenWidths()
   const containerRef = useRef<HTMLElement>(null)
+
+  const renderAlbum = (index: number) => {
+    const isNotMobile = !screenWidths.phoneOnly
+    const lessThanLimit = screenWidths.phoneOnly && index + 1 <= albumLimit
+    return isNotMobile || lessThanLimit
+  }
 
   useEffect(() => {
     if (containerRef?.current) {
@@ -39,9 +49,9 @@ const Inspiration = ({ albums, animateInspiration }: InspirationProps) => {
             />
           </Flex>
           <Flex className="albumList" position="relative">
-            {albums.map((data) => (
-              <Album key={data.id} {...data} />
-            ))}
+            {albums.map((data, index) => {
+              return renderAlbum(index) ? <Album key={data.id} {...data} /> : null
+            })}
           </Flex>
         </Container>
       </Container>

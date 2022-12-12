@@ -14,7 +14,7 @@ const Contact = ({ animateContact }: ContactProps) => {
   return (
     <Container
       as="section"
-      id="#contact"
+      id="contact"
       paddingTop={{ xs: 26, lg: 0 }}
       paddingBottom={{ xs: 80, sm: 40, lg: 100 }}
     >

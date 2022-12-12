@@ -9013,35 +9013,24 @@ var styleAliases4 = {
   align: align2,
   wrap,
   ...customStyleProps3
-}, variants3 = {
-  variant: {
-    list: {
-      display: "block",
-      "@xl": {
-        display: "flex"
-      }
-    }
-  }
 }, StyledDiv4 = styled("div", {
-  display: "flex",
-  variants: variants3
+  display: "flex"
 });
 
 // app/ui/primitives/layout/Flex/index.tsx
-var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), Flex = ({ children, variant, css: css2, ...props }) => {
+var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), Flex = ({ children, css: css2, ...props }) => {
   let { mediaStyles: mediaStyles2, restProps } = getformattedProps({
     props,
     styleProps: styleProps4,
     styleAliases: styleAliases4
   });
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(StyledDiv4, {
-    variant,
     css: { ...mediaStyles2, ...css2 },
     ...restProps,
     children
   }, void 0, !1, {
     fileName: "app/ui/primitives/layout/Flex/index.tsx",
-    lineNumber: 22,
+    lineNumber: 20,
     columnNumber: 5
   }, this);
 };
@@ -9115,7 +9104,7 @@ Img.displayName = "Img";
 var moveUpDown = keyframes({
   "0%, to": { transform: "translateY(-15%)" },
   "50%": { transform: "translateY(15%)" }
-}), variants4 = {
+}), variants3 = {
   variant: {
     line: {
       position: "relative",
@@ -9147,7 +9136,7 @@ var moveUpDown = keyframes({
   transition: "0.15s color ease-in-out",
   cursor: "pointer",
   outline: "1px solid transparent",
-  variants: variants4
+  variants: variants3
 });
 
 // app/ui/primitives/navigation/Link/index.tsx
@@ -9202,7 +9191,7 @@ var {
   fontWeight,
   textTransform,
   lineHeight
-}, variants5 = {
+}, variants4 = {
   variant: {
     withSeparator: {
       "&::after": {
@@ -9216,7 +9205,7 @@ var {
     }
   }
 }, StyledSpan = styled("span", {
-  variants: variants5
+  variants: variants4
 });
 
 // app/ui/primitives/typography/Text/index.tsx
@@ -11006,7 +10995,7 @@ var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), loader = async ()
 }, routes_default = Index;
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "69c44b3b", entry: { module: "/build/entry.client-LONNIINE.js", imports: ["/build/_shared/chunk-URHDA5WG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PRFU6ZKB.js", imports: ["/build/_shared/chunk-EAMOY2JI.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-J4PX22OL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-69C44B3B.js" };
+var assets_manifest_default = { version: "623e045f", entry: { module: "/build/entry.client-LONNIINE.js", imports: ["/build/_shared/chunk-URHDA5WG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PRFU6ZKB.js", imports: ["/build/_shared/chunk-EAMOY2JI.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-EF3RT735.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-623E045F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

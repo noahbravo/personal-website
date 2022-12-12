@@ -4,7 +4,7 @@
 
 ## Stack
 
-This website was built with [Remix](https://remix.run/) using my [component library](https://github.com/elenabravo/typescript-react-atomic-starter) and the following technologies:
+This website was built with [Remix](https://remix.run/) using a [custom component library](https://github.com/elenabravo/typescript-react-atomic-starter) and the following technologies:
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)

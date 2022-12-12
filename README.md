@@ -1,35 +1,28 @@
-# Welcome to Remix!
+# Elena Bravo personal website
 
-[Visit website](http://elenabravo.com/) 🚀
+## ![App Preview](https://i.imgur.com/p99uxBs.png)
 
-### Stack
+## Stack
 
-This website was developed using [webpack5-pug-sass-starter](https://github.com/elenabravo/webpack5-pug-sass-starter) as a boilerplate.
-It includes the following features:
+This website was built with [Remix](https://remix.run/) using my [component library](https://github.com/elenabravo/typescript-react-atomic-starter) and the following technologies:
 
-1. Install the [Netlify CLI](https://www.netlify.com/products/dev/):
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Stitches](https://stitches.dev/)
+- [GSAP](https://greensock.com/gsap/)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
 
-```sh
-npm i -g netlify-cli
-```
+---
 
-If you have previously installed the Netlify CLI, you should update it to the latest version:
+## Server
 
-```sh
-npm i -g netlify-cli@latest
-```
+- [Spotify web api node](https://github.com/thelinmichael/spotify-web-api-node) was used to generate tracks and artists data.
+- In order to create these files a [Spotify authentication token](https://developer.spotify.com/documentation/general/guides/authorization/) must be provided.
+- Run `npm run set:data` to start the server and generate the data or `npm run set:data:watch` to do it in watch mode.
 
-2. Sign up and log in to Netlify:
-
-```sh
-netlify login
-```
-
-3. Create a new site:
-
-```sh
-netlify init
-```
+---
 
 ## Development
 
@@ -51,14 +44,17 @@ Open up [http://localhost:3000](http://localhost:3000), and you should be ready 
 
 Note: When running the Netlify CLI, file changes will rebuild assets, but you will not see the changes to the page you are on unless you do a browser refresh of the page. Due to how the Netlify CLI builds the Remix App Server, it does not support hot module reloading.
 
-## Deployment
+---
 
-There are two ways to deploy your app to Netlify, you can either link your app to your git repo and have it auto deploy changes to Netlify, or you can deploy your app manually. If you've followed the setup instructions already, all you need to do is run this:
+## Netlify CI/CD
 
-```sh
-# preview deployment
-netlify deploy --build
+This website is hosted on [Netlify](https://www.netlify.com/), taking advantage of automatic builds and instantaneously-published deploys.
+[Go to website](http://elenabravo.com/)
 
-# production deployment
-netlify deploy --build --prod
-```
+---
+
+## To do
+
+- Add tests
+- Add accesibility support for animations
+- Improve performance

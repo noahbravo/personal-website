@@ -1,6 +1,6 @@
 # Elena Bravo personal website
 
-## ![App Preview](https://i.imgur.com/p99uxBs.png)
+## ![Website Preview](https://i.imgur.com/p99uxBs.png)
 
 ## Stack
 

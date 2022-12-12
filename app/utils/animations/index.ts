@@ -1,0 +1,7 @@
+export * from './about'
+export * from './albums'
+export * from './bgColor'
+export * from './contact'
+export * from './mobileMenu'
+export * from './smoothScroll'
+export * from './stack'

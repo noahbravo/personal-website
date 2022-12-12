@@ -1,0 +1,480 @@
+{
+  "artists": [
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/6guC9FqvlVboSKTI77NG2k" },
+      "followers": { "href": null, "total": 615610 },
+      "genres": ["metalcore", "pixie", "sacramento indie", "screamo", "swancore"],
+      "href": "https://api.spotify.com/v1/artists/6guC9FqvlVboSKTI77NG2k",
+      "id": "6guC9FqvlVboSKTI77NG2k",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb7ab31728854684433fe3dc64",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051747ab31728854684433fe3dc64",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1787ab31728854684433fe3dc64",
+          "width": 160
+        }
+      ],
+      "name": "Dance Gavin Dance",
+      "popularity": 64,
+      "type": "artist",
+      "uri": "spotify:artist:6guC9FqvlVboSKTI77NG2k"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/6bmGjHSXH8rPaZ2iQhgNQ0" },
+      "followers": { "href": null, "total": 9712 },
+      "genres": ["pop punk", "rva indie"],
+      "href": "https://api.spotify.com/v1/artists/6bmGjHSXH8rPaZ2iQhgNQ0",
+      "id": "6bmGjHSXH8rPaZ2iQhgNQ0",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb19f52c69c53bf7df8b0403a4",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517419f52c69c53bf7df8b0403a4",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17819f52c69c53bf7df8b0403a4",
+          "width": 160
+        }
+      ],
+      "name": "Telltale",
+      "popularity": 44,
+      "type": "artist",
+      "uri": "spotify:artist:6bmGjHSXH8rPaZ2iQhgNQ0"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/0hAd6zwEgt9ILuMDY1prcI" },
+      "followers": { "href": null, "total": 553624 },
+      "genres": ["modern alternative rock", "modern rock", "rock", "vegas indie"],
+      "href": "https://api.spotify.com/v1/artists/0hAd6zwEgt9ILuMDY1prcI",
+      "id": "0hAd6zwEgt9ILuMDY1prcI",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb66418075fca6503e959f160f",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517466418075fca6503e959f160f",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17866418075fca6503e959f160f",
+          "width": 160
+        }
+      ],
+      "name": "Palaye Royale",
+      "popularity": 63,
+      "type": "artist",
+      "uri": "spotify:artist:0hAd6zwEgt9ILuMDY1prcI"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/3btzEQD6sugImIHPMRgkwV" },
+      "followers": { "href": null, "total": 584271 },
+      "genres": ["indie rock", "modern alternative rock", "modern rock", "rock"],
+      "href": "https://api.spotify.com/v1/artists/3btzEQD6sugImIHPMRgkwV",
+      "id": "3btzEQD6sugImIHPMRgkwV",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb8c758dc10677dcff19a8193a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051748c758dc10677dcff19a8193a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1788c758dc10677dcff19a8193a",
+          "width": 160
+        }
+      ],
+      "name": "Wolf Alice",
+      "popularity": 61,
+      "type": "artist",
+      "uri": "spotify:artist:3btzEQD6sugImIHPMRgkwV"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/4QxIol1JzAa4ePmDytv0e4" },
+      "followers": { "href": null, "total": 24928 },
+      "genres": ["modern alternative rock"],
+      "href": "https://api.spotify.com/v1/artists/4QxIol1JzAa4ePmDytv0e4",
+      "id": "4QxIol1JzAa4ePmDytv0e4",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb88491b78ce90231cbd5069ef",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517488491b78ce90231cbd5069ef",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17888491b78ce90231cbd5069ef",
+          "width": 160
+        }
+      ],
+      "name": "KID BRUNSWICK",
+      "popularity": 44,
+      "type": "artist",
+      "uri": "spotify:artist:4QxIol1JzAa4ePmDytv0e4"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/5FjQVp1Lb0kltmwIuu5kfj" },
+      "followers": { "href": null, "total": 150096 },
+      "genres": ["metalcore"],
+      "href": "https://api.spotify.com/v1/artists/5FjQVp1Lb0kltmwIuu5kfj",
+      "id": "5FjQVp1Lb0kltmwIuu5kfj",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb22a2bea5e280b6209916089c",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517422a2bea5e280b6209916089c",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17822a2bea5e280b6209916089c",
+          "width": 160
+        }
+      ],
+      "name": "Dayseeker",
+      "popularity": 61,
+      "type": "artist",
+      "uri": "spotify:artist:5FjQVp1Lb0kltmwIuu5kfj"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/4KH4eOg39KeBpnfSgvIteD" },
+      "followers": { "href": null, "total": 45663 },
+      "genres": ["english indie rock", "modern alternative rock", "modern rock", "welsh indie"],
+      "href": "https://api.spotify.com/v1/artists/4KH4eOg39KeBpnfSgvIteD",
+      "id": "4KH4eOg39KeBpnfSgvIteD",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb94cde60dddd5cebb0442a919",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517494cde60dddd5cebb0442a919",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17894cde60dddd5cebb0442a919",
+          "width": 160
+        }
+      ],
+      "name": "Pretty Vicious",
+      "popularity": 43,
+      "type": "artist",
+      "uri": "spotify:artist:4KH4eOg39KeBpnfSgvIteD"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/0cESlyDxeKCUzc3gm1owur" },
+      "followers": { "href": null, "total": 30240 },
+      "genres": ["progressive post-hardcore", "russian metalcore"],
+      "href": "https://api.spotify.com/v1/artists/0cESlyDxeKCUzc3gm1owur",
+      "id": "0cESlyDxeKCUzc3gm1owur",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebfe12980643d2ecfb4580f8dd",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174fe12980643d2ecfb4580f8dd",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178fe12980643d2ecfb4580f8dd",
+          "width": 160
+        }
+      ],
+      "name": "Shrezzers",
+      "popularity": 39,
+      "type": "artist",
+      "uri": "spotify:artist:0cESlyDxeKCUzc3gm1owur"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/1P1y4wp6V0CwjhGcXPKgAu" },
+      "followers": { "href": null, "total": 46020 },
+      "genres": ["anthem emo", "aussie emo", "pop punk"],
+      "href": "https://api.spotify.com/v1/artists/1P1y4wp6V0CwjhGcXPKgAu",
+      "id": "1P1y4wp6V0CwjhGcXPKgAu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb6d2229439469ff1ec541a075",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051746d2229439469ff1ec541a075",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1786d2229439469ff1ec541a075",
+          "width": 160
+        }
+      ],
+      "name": "Between You & Me",
+      "popularity": 44,
+      "type": "artist",
+      "uri": "spotify:artist:1P1y4wp6V0CwjhGcXPKgAu"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/6oFs3qk4VepIVFdoD4jmsy" },
+      "followers": { "href": null, "total": 613946 },
+      "genres": ["modern rock", "pixie", "pop", "pop emo", "pop punk"],
+      "href": "https://api.spotify.com/v1/artists/6oFs3qk4VepIVFdoD4jmsy",
+      "id": "6oFs3qk4VepIVFdoD4jmsy",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb17bc62067f0a92bfb0ceadf7",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517417bc62067f0a92bfb0ceadf7",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17817bc62067f0a92bfb0ceadf7",
+          "width": 160
+        }
+      ],
+      "name": "PVRIS",
+      "popularity": 62,
+      "type": "artist",
+      "uri": "spotify:artist:6oFs3qk4VepIVFdoD4jmsy"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/1W2Fv4YUnjC8hx2qQd6fGh" },
+      "followers": { "href": null, "total": 158416 },
+      "genres": ["anthem emo", "pixie", "pop punk"],
+      "href": "https://api.spotify.com/v1/artists/1W2Fv4YUnjC8hx2qQd6fGh",
+      "id": "1W2Fv4YUnjC8hx2qQd6fGh",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb00aa71ba33060789c5483225",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517400aa71ba33060789c5483225",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17800aa71ba33060789c5483225",
+          "width": 160
+        }
+      ],
+      "name": "Stand Atlantic",
+      "popularity": 54,
+      "type": "artist",
+      "uri": "spotify:artist:1W2Fv4YUnjC8hx2qQd6fGh"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/3KEhhixoMshqSEJ71rS7w1" },
+      "followers": { "href": null, "total": 96623 },
+      "genres": ["british alternative rock", "modern alternative rock", "modern rock", "pixie"],
+      "href": "https://api.spotify.com/v1/artists/3KEhhixoMshqSEJ71rS7w1",
+      "id": "3KEhhixoMshqSEJ71rS7w1",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb0f8976b99292fe454bff2fc8",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051740f8976b99292fe454bff2fc8",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1780f8976b99292fe454bff2fc8",
+          "width": 160
+        }
+      ],
+      "name": "Marmozets",
+      "popularity": 37,
+      "type": "artist",
+      "uri": "spotify:artist:3KEhhixoMshqSEJ71rS7w1"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/4YW1GDcW9hobRPMDi8v6XH" },
+      "followers": { "href": null, "total": 38665 },
+      "genres": ["progressive post-hardcore", "swancore"],
+      "href": "https://api.spotify.com/v1/artists/4YW1GDcW9hobRPMDi8v6XH",
+      "id": "4YW1GDcW9hobRPMDi8v6XH",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb22ada252809f01726281d70d",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517422ada252809f01726281d70d",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17822ada252809f01726281d70d",
+          "width": 160
+        }
+      ],
+      "name": "Makari",
+      "popularity": 40,
+      "type": "artist",
+      "uri": "spotify:artist:4YW1GDcW9hobRPMDi8v6XH"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/1aK2PiGHyEgc4wAIKQzMj2" },
+      "followers": { "href": null, "total": 81919 },
+      "genres": ["bay area indie", "progressive post-hardcore"],
+      "href": "https://api.spotify.com/v1/artists/1aK2PiGHyEgc4wAIKQzMj2",
+      "id": "1aK2PiGHyEgc4wAIKQzMj2",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb7b60fdd0508b9a770e70d986",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051747b60fdd0508b9a770e70d986",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1787b60fdd0508b9a770e70d986",
+          "width": 160
+        }
+      ],
+      "name": "I The Mighty",
+      "popularity": 43,
+      "type": "artist",
+      "uri": "spotify:artist:1aK2PiGHyEgc4wAIKQzMj2"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/6Ad91Jof8Niiw0lGLLi3NW" },
+      "followers": { "href": null, "total": 2011576 },
+      "genres": ["british indie rock", "modern rock", "rock"],
+      "href": "https://api.spotify.com/v1/artists/6Ad91Jof8Niiw0lGLLi3NW",
+      "id": "6Ad91Jof8Niiw0lGLLi3NW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb62dc5af39a942ba6edc0179a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517462dc5af39a942ba6edc0179a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17862dc5af39a942ba6edc0179a",
+          "width": 160
+        }
+      ],
+      "name": "YUNGBLUD",
+      "popularity": 71,
+      "type": "artist",
+      "uri": "spotify:artist:6Ad91Jof8Niiw0lGLLi3NW"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/0hp58JplihFjlLstUbKS0x" },
+      "followers": { "href": null, "total": 47647 },
+      "genres": ["pop punk"],
+      "href": "https://api.spotify.com/v1/artists/0hp58JplihFjlLstUbKS0x",
+      "id": "0hp58JplihFjlLstUbKS0x",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebccc02c3e2aa2a4b947adf45f",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174ccc02c3e2aa2a4b947adf45f",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178ccc02c3e2aa2a4b947adf45f",
+          "width": 160
+        }
+      ],
+      "name": "The Home Team",
+      "popularity": 50,
+      "type": "artist",
+      "uri": "spotify:artist:0hp58JplihFjlLstUbKS0x"
+    },
+    {
+      "external_urls": { "spotify": "https://open.spotify.com/artist/0XGJ3GUPwslwFJ66yNbHeh" },
+      "followers": { "href": null, "total": 94437 },
+      "genres": ["alternative emo", "anthem emo", "pop punk", "uk pop punk"],
+      "href": "https://api.spotify.com/v1/artists/0XGJ3GUPwslwFJ66yNbHeh",
+      "id": "0XGJ3GUPwslwFJ66yNbHeh",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebb9fca0570e38d261de5633ca",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174b9fca0570e38d261de5633ca",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178b9fca0570e38d261de5633ca",
+          "width": 160
+        }
+      ],
+      "name": "Trash Boat",
+      "popularity": 43,
+      "type": "artist",
+      "uri": "spotify:artist:0XGJ3GUPwslwFJ66yNbHeh"
+    }
+  ]
+}

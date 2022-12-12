@@ -23,8 +23,10 @@ const Album = ({ album, artist }: AlbumData) => {
         background="linear-gradient(180deg,transparent,rgba(0,0,0,.895))"
       />
       <Flex align="center" position="absolute" bottom="0" left="0" paddingX={16} paddingBottom={16}>
-        <Img src={artistImage} alt={artistName} size={30} marginRight={8} borderRadius="50%" />
-        <Text fontSize="sm">{artistName}</Text>
+        <Img src={artistImage} alt={artistName} size={30} marginRight={6} borderRadius="50%" />
+        <Text fontSize="sm" lineHeight="tight">
+          {artistName}
+        </Text>
       </Flex>
     </Box>
   )

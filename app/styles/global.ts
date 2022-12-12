@@ -29,6 +29,7 @@ export const globalStyles = globalCss({
     lineHeight: 1.5,
     backgroundColor: '$black',
     color: '$white',
-    fontFamily: '$primary'
+    fontFamily: '$primary',
+    overflowX: 'hidden'
   }
 })

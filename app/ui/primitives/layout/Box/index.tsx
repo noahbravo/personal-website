@@ -1,6 +1,6 @@
 import React from 'react'
-import type { PrimitiveProps } from '../../types'
-import { getformattedProps } from '../../../../utils/primitives'
+import type { PrimitiveProps } from '~/ui/primitives/types'
+import { getformattedProps } from '~/utils/primitives'
 import type { variants } from './styles'
 import { styleProps, styleAliases, StyledDiv } from './styles'
 

@@ -49,18 +49,6 @@ export const styleProps = {
   ...customStyleProps
 } as const
 
-export const variants = {
-  variant: {
-    list: {
-      display: 'block',
-      '@xl': {
-        display: 'flex'
-      }
-    }
-  }
-}
-
 export const StyledDiv = styled('div', {
-  display: 'flex',
-  variants
+  display: 'flex'
 })

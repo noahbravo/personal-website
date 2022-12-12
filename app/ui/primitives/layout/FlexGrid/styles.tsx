@@ -1,4 +1,4 @@
-import { styled } from '../../../../stitches.config'
+import { styled } from '~/stitches.config'
 import { styleProps as flexStyleProps, styleAliases as flexStyleAliases } from '../Flex/styles'
 import { styleProps as gridStyleProps, styleAliases as gridStyleAliases } from '../Grid/styles'
 

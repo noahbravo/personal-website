@@ -1,6 +1,6 @@
 import React from 'react'
-import type { LayoutAndCSSProps } from '../../types'
-import { getformattedProps } from '../../../../utils/primitives'
+import type { LayoutAndCSSProps } from '~/ui/primitives/types'
+import { getformattedProps } from '~/utils/primitives'
 import type { variants } from './styles'
 import { StyledLink } from './styles'
 

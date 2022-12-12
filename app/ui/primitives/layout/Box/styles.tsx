@@ -1,5 +1,5 @@
-import { styled } from '../../../../stitches.config'
-import { bgColor } from '../../../../styles'
+import { styled } from '~/stitches.config'
+import { bgColor } from '~/styles'
 
 export const styleAliases = {
   bgColor: 'backgroundColor',

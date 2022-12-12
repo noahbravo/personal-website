@@ -1,6 +1,6 @@
 import React from 'react'
-import type { PrimitiveProps } from '../../types'
-import { getformattedProps } from '../../../../utils/primitives'
+import type { PrimitiveProps } from '~/ui/primitives/types'
+import { getformattedProps } from '~/utils/primitives'
 import { styleAliases, styleProps, StyledDiv } from './styles'
 
 interface FlexGridProps

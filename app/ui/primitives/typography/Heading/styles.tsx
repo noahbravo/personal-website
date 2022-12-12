@@ -1,5 +1,5 @@
-import { styled } from '../../../../stitches.config'
-import { styleProps as textStyleProps } from '../Text/styles'
+import { styled } from '~/stitches.config'
+import { styleProps as textStyleProps } from '~/ui/primitives/typography/Text/styles'
 
 export const styleProps = {
   ...textStyleProps

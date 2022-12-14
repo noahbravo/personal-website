@@ -4,7 +4,7 @@
 
 ## Stack
 
-This website was built with [Remix](https://remix.run/) on top of a [custom component library](https://github.com/elenabravo/bones-ui) and the following technologies:
+This website was built with [Remix](https://remix.run/) on top of a [custom component library](https://github.com/elenabravo/bones-ui) using the following technologies:
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)

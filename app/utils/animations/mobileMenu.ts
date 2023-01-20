@@ -28,6 +28,7 @@ function enableScroll() {
 export function animateMobileMenu(gsap: GSAP) {
   function openMenu() {
     disableScroll()
+    gsap.to('body', { duration, overflow: 'hidden' })
     gsap.to(Selectors.menu, {
       ...visible,
       duration: 0.25,
@@ -40,6 +41,7 @@ export function animateMobileMenu(gsap: GSAP) {
 
   function closeMenu() {
     enableScroll()
+    gsap.to('body', { overflow: 'auto' })
     gsap.to(Selectors.menu, {
       ...invisible,
       duration: 0.25,

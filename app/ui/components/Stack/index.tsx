@@ -38,8 +38,8 @@ const Stack = ({ animateStack }: StackProps) => {
             fontSize={{ xs: '2xl', sm: '3xl', md: '4xl' }}
           >
             JAVASCRIPT, TYPESCRIPT, REACT, NEXT, REMIX, GRAPHQL, APOLLO, REDUX, WEBPACK, JEST, REACT
-            TESTING LIBRARY, CYPRESS, NODE, EXPRESS, SASS, CSS IN JS, TAILWINDCSS, GSAP, PUG, GIT,
-            GITLAB, STORYBOOK, FIREBASE, NETLIFY, GATSBY, FIGMA, ILLUSTRATOR
+            TESTING LIBRARY, PLAYWRIGHT, CYPRESS, NODE, EXPRESS, SASS, CSS IN JS, TAILWINDCSS, GSAP,
+            PUG, GIT, GITLAB, STORYBOOK, FIREBASE, NETLIFY, GATSBY, FIGMA, ILLUSTRATOR
           </Text>
           <Img
             src={skelly}

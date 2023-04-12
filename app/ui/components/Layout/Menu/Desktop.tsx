@@ -8,7 +8,7 @@ const DesktopMenu = ({ menuItems }: MenuProps) => (
     display={{ xs: 'hidden', lg: 'flex' }}
     position="fixed"
     bottom={86}
-    right={{ xs: '0', lg: 40, xl: `calc(((100vw - ${toRem(1280)})/2) - ${toRem(28)})` }}
+    right={{ xs: '0', lg: 40, '2xl': `calc(((100vw - ${toRem(1280)})/2) - ${toRem(28)})` }}
     paddingTop={{ lg: 86 }}
     zIndex="z50"
   >

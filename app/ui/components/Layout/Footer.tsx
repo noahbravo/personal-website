@@ -22,8 +22,28 @@ const Footer = () => (
         justify={{ sm: 'center' }}
       >
         <Container>
-          <Text variant="withSeparator">© {year}</Text>
-          <Text>Designed & coded with 🔥 by Elena Bravo while listening to</Text>
+          <Text
+            variant="withSeparator"
+            css={{
+              '&:before': {
+                content: '©',
+                marginRight: toRem(4)
+              }
+            }}
+          >
+            {year}
+          </Text>
+          <Text
+            css={{
+              '&:after': {
+                content: '🔥',
+                marginLeft: toRem(4)
+              }
+            }}
+          >
+            Designed & coded with
+          </Text>
+          <Text> by Elena Bravo while listening to</Text>
           <Link href="https://spoti.fi/3JVSAsH" isExternal display="inline-flex" marginLeft={6}>
             <Img
               src={spotifyLogo}

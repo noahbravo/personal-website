@@ -47,7 +47,7 @@ const MobileMenu = ({ menuItems, networks, animateMobileMenu }: MobileMenuProps)
           <Container variant="wrap" transform="translateY(108%)">
             <Img
               src={logo}
-              alt="Elena Bravo logo"
+              alt="Noah Bravo logo"
               imgWidth={{ xs: 120, sm: 150 }}
               pointerEvents="none"
             />

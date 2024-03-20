@@ -11,7 +11,7 @@ const Header = () => {
       left={{ xs: 20, lg: 40, '2xl': `calc(((100vw - ${toRem(1280)})/2) - ${toRem(28)})` }}
       zIndex="z40"
     >
-      <Img src={logo} alt="Elena Bravo logo" imgWidth={{ xs: 120, sm: 150 }} pointerEvents="none" />
+      <Img src={logo} alt="Noah Bravo logo" imgWidth={{ xs: 120, sm: 150 }} pointerEvents="none" />
     </Container>
   )
 }

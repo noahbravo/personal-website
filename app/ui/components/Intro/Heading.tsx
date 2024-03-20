@@ -5,7 +5,7 @@ import heading from '~/assets/img/heading.svg'
 const Heading = () => (
   <Img
     src={heading}
-    alt="Front-end JAMstack Developer"
+    alt="Senior Front-end Developer"
     gridColumn={{ xs: '10', lg: '6' }}
     gridColumnStart={{ xs: '2', sm: '3', lg: '3' }}
     height={toRem(425)}

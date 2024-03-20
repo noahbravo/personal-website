@@ -4,7 +4,7 @@ import ctaText from '~/assets/img/intro-cta.svg'
 
 const CTA = () => (
   <Link
-    href="mailto:hey@elenabravo.com"
+    href="mailto:hola@noahbravo.dev"
     position={{ xs: 'fixed', lg: 'relative' }}
     gridColumnStart={{ lg: '11' }}
     alignSelf={{ lg: 'start' }}

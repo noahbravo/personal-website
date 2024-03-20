@@ -23,7 +23,7 @@ const Footer = () => (
       >
         <Container>
           <Text variant="withSeparator">© {year}</Text>
-          <Text>Designed & coded with 🔥 by Noah while listening to</Text>
+          <Text>Designed & coded with 🔥 by Noah Bravo while listening to</Text>
           <Link href="https://spoti.fi/3JVSAsH" isExternal display="inline-flex" marginLeft={6}>
             <Img
               src={spotifyLogo}

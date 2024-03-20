@@ -1,6 +1,6 @@
 # Noah Bravo personal website
 
-## ![Website Preview](https://i.imgur.com/p99uxBs.png)
+## ![Website Preview](https://i.imgur.com/b2Y5ojs.png)
 
 ## Stack
 

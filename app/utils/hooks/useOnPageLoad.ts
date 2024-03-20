@@ -7,6 +7,7 @@ export function useOnPageLoad() {
     const onPageLoad = () => {
       setLoaded(true)
       document.body.style.setProperty('overflow-y', 'auto')
+      window.scrollTo(0, 0)
     }
 
     // Check if the page has already loaded

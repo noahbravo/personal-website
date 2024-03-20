@@ -1,11 +1,11 @@
 export default [
   {
     name: 'Github',
-    href: 'https://github.com/elenabravo'
+    href: 'https://github.com/noahbravo'
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/elena-bravo/'
+    href: 'https://www.linkedin.com/in/noah-bravo/'
   },
   {
     name: 'Spotify',

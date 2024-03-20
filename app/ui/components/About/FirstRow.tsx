@@ -25,13 +25,13 @@ const FirstRow = () => (
       display="inline"
       gridColumn={{ xs: '12', lg: '3' }}
       paddingBottom={{ xs: 80, lg: 20, xl: 0 }}
-      marginTop={{ xs: 18, lg:6 }}
+      marginTop={{ xs: 18, lg: 6 }}
       marginBottom={18}
       fontWeight="normal"
       fontSize="lg"
       lineHeight="relaxed"
     >
-      Hi, I'm Elena Bravo, a multidisciplinary front-end developer and digital designer based in
+      Hi, I'm Noah Bravo, a multidisciplinary front-end developer and digital designer based in
       Madrid, Spain. With over {experience} years of experience working with all types of clients
       and projects, I thrive on bringing both the technical and visual aspects of digital products
       to life.
@@ -71,7 +71,7 @@ const FirstRow = () => (
         <Img
           className="profileLoadingImg"
           src={profileBw}
-          alt="Elena Bravo profile photo in black and white"
+          alt="Noah Bravo profile photo in black and white"
           opacity="100"
           visibility="visible"
           pointerEvents="none"

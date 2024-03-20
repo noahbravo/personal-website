@@ -28,7 +28,7 @@ const ContactEmail = () => (
         marginBottom={{ xs: 40, lg: 60 }}
       >
         <Link
-          href="mailto:mailto:hey@elenabravo.com"
+          href="mailto:mailto:hola@noahbravo.dev"
           position="relative"
           css={{ '&:hover .linkLine': { width: '100%' } }}
         >
@@ -52,7 +52,7 @@ const ContactEmail = () => (
               </Box>
             </Box>
             <Text fontSize={{ xs: '3xl', sm: '5xl' }} lineHeight="none">
-              hey@
+              hola@
             </Text>
           </Container>
           <Container>
@@ -75,7 +75,7 @@ const ContactEmail = () => (
               </Box>
             </Box>
             <Text fontSize={{ xs: '3xl', sm: '5xl' }} lineHeight="none">
-              elenabravo.com
+              noahbravo.dev
             </Text>
           </Container>
         </Link>

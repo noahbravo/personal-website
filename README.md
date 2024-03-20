@@ -1,10 +1,10 @@
-# Elena Bravo personal website
+# Noah Bravo personal website
 
 ## ![Website Preview](https://i.imgur.com/p99uxBs.png)
 
 ## Stack
 
-This website was built with [Remix](https://remix.run/) on top of a [custom component library](https://github.com/elenabravo/bones-ui) using the following technologies:
+This website was built with [Remix](https://remix.run/) on top of a [custom component library](https://github.com/noahbravo/bones-ui) using the following technologies:
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -49,7 +49,7 @@ Note: When running the Netlify CLI, file changes will rebuild assets, but you wi
 ## Netlify CI/CD
 
 This website is hosted on [Netlify](https://www.netlify.com/), taking advantage of automatic builds and instantaneously-published deploys.
-[Go to website](http://elenabravo.com/)
+[Go to website](http://noahbravo.dev/)
 
 ---
 
